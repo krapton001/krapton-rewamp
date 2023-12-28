@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "title": "Custom Software Development",
+            "shortDescription": "Tailored software solutions designed to meet your unique business needs.",
+            "iconUrl": "assets/custom_icons/1.png"
+        },
+        {
+            "title": "Web Application Development",
+            "shortDescription": "Robust, scalable, and intuitive web apps that deliver exceptional user experiences.",
+            "iconUrl": "assets/custom_icons/2.png"
+        },
+        {
+            "title": "Mobile App Development",
+            "shortDescription": "Unlocking the potential of mobile platforms for mobile applications.",
+            "iconUrl": "assets/custom_icons/3.png"
+        },
+        {
+            "title": "Maintenance & Support",
+            "shortDescription": "24/7 support services to ensure your applications run smoothly at all times.",
+            "iconUrl": "assets/custom_icons/4.png"
+        }
+    ]
+}

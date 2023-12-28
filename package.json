@@ -1,0 +1,29 @@
+{
+  "name": "krapton-rewamp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "npx prettier . --write"
+  },
+  "dependencies": {
+    "@builder.io/partytown": "^0.8.1",
+    "@react-three/drei": "^9.92.6",
+    "@react-three/fiber": "^8.15.12",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.2",
+    "next": "14.0.4",
+    "preact": "^10.19.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "three": "^0.160.0",
+    "react-google-recaptcha": "^3.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8",
+    "pretty-quick": "^3.1.3"
+  }
+}

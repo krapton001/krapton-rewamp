@@ -1,0 +1,25 @@
+.techImg {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+}
+.main {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    border-radius: 50%;
+    padding: 30px;
+    background-color: white;
+}
+
+@media (max-width: 767px) {
+    .techImg {
+        height: 60px;
+        width: 60px;
+    }
+}

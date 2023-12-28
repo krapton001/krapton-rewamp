@@ -1,0 +1,63 @@
+.gradientButton {
+    position: relative; /* relative */
+    color: white; /* text-white */
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px; /* px-8 (assuming 8 maps to 32px) */
+    border-radius: 9999px;
+    font-weight: 600; /* font-semibold (assuming 600 is the correct weight) */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    gap: 8px; /* gap-2 (assuming 2 maps to 8px) */
+    overflow: hidden;
+    background: linear-gradient(to left, red, blue, red);
+    background-position: 0 0;
+    background-size: 200%;
+    transition: background-position 0.5s ease;
+}
+
+.gradientButton,
+.outlineBtn:hover {
+    background-position: 100% 0;
+}
+
+.outlineBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, red, blue, red);
+    height: 60px;
+    line-height: 60px;
+    padding: 10px 30px; /* px-8 (assuming 8 maps to 32px) */
+    border-radius: 9999px;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.outlineBtn:before {
+    content: '';
+    position: absolute;
+
+    background: linear-gradient(to left, red, blue, red);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.outlineBtn:after {
+    content: '';
+    position: absolute;
+    background: white;
+    transform: scale(0.96);
+    z-index: -1;
+    transition: 0.5s ease;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px; /* px-8 (assuming 8 maps to 32px) */
+    border-radius: 9999px;
+    width: 100%;
+}
