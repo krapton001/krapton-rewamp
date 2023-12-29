@@ -1,15 +1,15 @@
-"use client";
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import HyperLink from "../../HyperLink";
+'use client';
+import { useState } from 'react';
+import { Dialog } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import HyperLink from '../../HyperLink';
 
 const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Products", href: "/products" },
-    { name: "Blogs", href: "/blogs" },
-    { name: "Careers", href: "/careers" },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'Products', href: '/products' },
+    { name: 'Blogs', href: '/blogs' },
+    { name: 'Careers', href: '/careers' },
 ];
 
 export default function Header() {
@@ -39,7 +39,7 @@ export default function Header() {
                 </div>
                 <div className="hidden lg:flex">
                     <div className="py-6">
-                        <HyperLink title={"hire us"} href={"/hire-us"}>
+                        <HyperLink title={'hire us'} href={'/hire-us'}>
                             Hire Us
                         </HyperLink>
                     </div>
@@ -62,17 +62,13 @@ export default function Header() {
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
                                 {navigation.map((item) => (
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
+                                    <a key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                                         {item.name}
                                     </a>
                                 ))}
                             </div>
                             <div className="py-6">
-                                <HyperLink title={"hire us"} href={"/hire-us"}>
+                                <HyperLink title={'hire us'} href={'/hire-us'}>
                                     Hire Us
                                 </HyperLink>
                             </div>

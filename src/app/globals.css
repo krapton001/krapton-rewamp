@@ -2,26 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.bg-gradient {
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.code-type {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sctrd-bg {
+    background: linear-gradient(
+            180.21deg,
+            #fff9f9 -64.58%,
+            rgba(255, 255, 255, 0.1) 115.31%
+        ),
+        linear-gradient(90deg, #42d392 0%, #28a36c 25%, #647eff 100%);
 }

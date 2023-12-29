@@ -1,6 +1,5 @@
-import HomePage from '@/components/page-partials/Home'
-import Image from 'next/image'
+import HomePage from '@/components/page-partials/Home';
 
-export default function Home() {
-  return <HomePage />
+export default function () {
+    return <HomePage />;
 }
