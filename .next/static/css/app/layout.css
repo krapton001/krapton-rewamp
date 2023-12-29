@@ -618,18 +618,6 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
-.min-h-\[90vh\] {
-  min-height: 90vh;
-}
-.min-h-\[0vh\] {
-  min-height: 0vh;
-}
-.min-h-\[80vh\] {
-  min-height: 80vh;
-}
-.min-h-\[70vh\] {
-  min-height: 70vh;
-}
 .w-14 {
   width: 3.5rem;
 }
@@ -837,10 +825,6 @@ video {
 .font-base {
   font-family: DM Sans, DM Sans fallback, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1002,13 +986,12 @@ video {
         linear-gradient(90deg, #42d392 0%, #28a36c 25%, #647eff 100%);
 }
 
-
 .web-builder {
     pointer-events: none;
 }
 .web-builder .navbar {
     background-color: white;
-    border-bottom: .1px solid rgba(0, 0, 0, 0.141);
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.141);
     padding: 10px 10px;
     font-size: 12px;
 }
@@ -1026,16 +1009,16 @@ video {
     color: white;
 }
 
-.builder-txt  {
+.builder-txt {
     margin-top: 50px;
 }
 
-.builder-txt h2  {
+.builder-txt h2 {
     font-size: 20px;
     font-weight: 700;
 }
 
-.builder-txt p  {
+.builder-txt p {
     font-size: 15px;
     font-weight: 300;
 }
@@ -1068,6 +1051,12 @@ video {
 .hover\:text-primaryDark:hover {
   --tw-text-opacity: 1;
   color: rgb(29 147 94 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-xl:hover {
@@ -1223,3 +1212,4 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+

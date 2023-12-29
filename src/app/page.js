@@ -1,10 +1,10 @@
-import { breadCrumbSchema } from '@/SEO/breadCrumbSchema';
-import { organizationSchema } from '@/SEO/organizationSchema';
-import { siteNavigationElement } from '@/SEO/siteNavigationElement';
-import { webPageSchema } from '@/SEO/webPageSchema';
+import { breadCrumbSchema } from '@/seo-utils/breadCrumbSchema';
+import { organizationSchema } from '@/seo-utils/organizationSchema';
+import { siteNavigationElement } from '@/seo-utils/siteNavigationElement';
+import { webPageSchema } from '@/seo-utils/webPageSchema';
 import HomePage from '@/components/page-partials/Home';
 import { HOST } from '@/constants';
-import { createMetaData } from '@/SEO/CommonMeta';
+import { createMetaData } from '@/seo-utils/CommonMeta';
 
 const url = `${HOST}`;
 const title = `Krapton - Let's build something amazing together`;
