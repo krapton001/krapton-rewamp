@@ -15,11 +15,11 @@ export const createMetaData = ({
             type: 'website',
             url: url,
             title,
-            description
-          },
-          twitter: {
+            description,
+        },
+        twitter: {
             description,
             card: 'summary_large_image',
-          },
+        },
     };
 };

@@ -4,8 +4,7 @@ import { siteNavigationElement } from '@/SEO/siteNavigationElement';
 import { webPageSchema } from '@/SEO/webPageSchema';
 import HomePage from '@/components/page-partials/Home';
 import { HOST } from '@/constants';
-import { createMetaData } from '@/SEO/CommonMeta'; 
-
+import { createMetaData } from '@/SEO/CommonMeta';
 
 const url = `${HOST}`;
 const title = `Krapton - Let's build something amazing together`;

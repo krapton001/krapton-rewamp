@@ -1,38 +1,32 @@
 export const services = [
     {
         title: 'API Development',
-        description:
-            'Empower your applications with our robust API development services. Seamless data exchange, integration, and functionality enhancements are just a click away.',
+        description: 'Empower your applications with our robust API development services. Seamless data exchange, integration, and functionality enhancements are just a click away.',
         icon: '',
     },
     {
         title: 'Application Development',
-        description:
-            'Bring your ideas to life with custom-tailored applications built to meet your specific business needs, ensuring enhanced efficiency and user engagement.',
+        description: 'Bring your ideas to life with custom-tailored applications built to meet your specific business needs, ensuring enhanced efficiency and user engagement.',
         icon: '',
     },
     {
         title: 'Application Maintenance',
-        description:
-            'Our ongoing maintenance services ensure your applications remain up-to-date, efficient, and bug-free, delivering consistent performance and user satisfaction.',
+        description: 'Our ongoing maintenance services ensure your applications remain up-to-date, efficient, and bug-free, delivering consistent performance and user satisfaction.',
         icon: '',
     },
     {
         title: 'Backup & Disaster Recovery',
-        description:
-            'Guard your vital data and systems against unforeseen disruptions. With our Backup and Disaster Recovery solutions, we ensure business continuity even in critical times.',
+        description: 'Guard your vital data and systems against unforeseen disruptions. With our Backup and Disaster Recovery solutions, we ensure business continuity even in critical times.',
         icon: '',
     },
     {
         title: 'Business Process Outsourcing',
-        description:
-            'Leverage our expertise in handling your operational tasks, allowing you to focus on core business activities and strategic growth.',
+        description: 'Leverage our expertise in handling your operational tasks, allowing you to focus on core business activities and strategic growth.',
         icon: '',
     },
     {
         title: 'Custom Software Services',
-        description:
-            'Unique challenges require unique solutions. Our custom software services cater to specific business needs, ensuring optimized operations and increased ROI.',
+        description: 'Unique challenges require unique solutions. Our custom software services cater to specific business needs, ensuring optimized operations and increased ROI.',
         icon: '',
     },
     {
@@ -43,44 +37,37 @@ export const services = [
     },
     {
         title: 'Digital Transformation',
-        description:
-            'Redefine and future-proof your business in this digital age. From strategy to execution, our digital transformation services ensure you remain at the forefront of innovation.',
+        description: 'Redefine and future-proof your business in this digital age. From strategy to execution, our digital transformation services ensure you remain at the forefront of innovation.',
         icon: '',
     },
     {
         title: 'Implementation & Deployment',
-        description:
-            'From planning to execution, our experts ensure a seamless and hassle-free implementation and deployment of your software solutions, ensuring quick time-to-market.',
+        description: 'From planning to execution, our experts ensure a seamless and hassle-free implementation and deployment of your software solutions, ensuring quick time-to-market.',
         icon: '',
     },
     {
         title: 'Infrastructure Support',
-        description:
-            'Keep your IT infrastructure resilient, updated, and optimized. Our dedicated team provides 24/7 support, ensuring smooth business operations.',
+        description: 'Keep your IT infrastructure resilient, updated, and optimized. Our dedicated team provides 24/7 support, ensuring smooth business operations.',
         icon: '',
     },
     {
         title: 'Migrations & Upgrades',
-        description:
-            'Transition to the latest platforms or enhance existing systems. Our migration and upgrade services ensure data integrity, minimal downtime, and optimized performance.',
+        description: 'Transition to the latest platforms or enhance existing systems. Our migration and upgrade services ensure data integrity, minimal downtime, and optimized performance.',
         icon: '',
     },
     {
         title: 'Product Lifecycle Management (PLM)',
-        description:
-            'Manage the entire lifecycle of your products with our PLM services, ensuring streamlined processes from inception to retirement.',
+        description: 'Manage the entire lifecycle of your products with our PLM services, ensuring streamlined processes from inception to retirement.',
         icon: '',
     },
     {
         title: 'Quality Assurance (QA Testing)',
-        description:
-            'Ensure impeccable software quality with our QA services. Rigorous testing methodologies ensure your software is free from glitches and offers optimal performance.',
+        description: 'Ensure impeccable software quality with our QA services. Rigorous testing methodologies ensure your software is free from glitches and offers optimal performance.',
         icon: '',
     },
     {
         title: 'SLA Support',
-        description:
-            'Dedicated support in line with Service Level Agreements ensures quick resolutions, minimal downtimes, and consistent service quality.',
+        description: 'Dedicated support in line with Service Level Agreements ensures quick resolutions, minimal downtimes, and consistent service quality.',
         icon: '',
     },
     {
@@ -91,20 +78,17 @@ export const services = [
     },
     {
         title: 'Startup & MVP Services',
-        description:
-            'For startups looking to launch fast, our MVP services provide a swift, efficient, and cost-effective route to market, ensuring your idea gets the validation it needs.',
+        description: 'For startups looking to launch fast, our MVP services provide a swift, efficient, and cost-effective route to market, ensuring your idea gets the validation it needs.',
         icon: '',
     },
     {
         title: 'Systems Integration',
-        description:
-            'Streamline your IT landscape by integrating disparate systems into a cohesive unit. Enhance data flow and ensure consistent functionality across the board.',
+        description: 'Streamline your IT landscape by integrating disparate systems into a cohesive unit. Enhance data flow and ensure consistent functionality across the board.',
         icon: '',
     },
     {
         title: 'Embark on a Digital Journey with Kraption',
-        description:
-            'Whatever your software needs, Digital Solutions Inc. is equipped to deliver. Partner with us and watch your business thrive in the digital realm.',
+        description: 'Whatever your software needs, Digital Solutions Inc. is equipped to deliver. Partner with us and watch your business thrive in the digital realm.',
         icon: '',
     },
     {

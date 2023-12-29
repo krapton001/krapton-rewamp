@@ -23,13 +23,12 @@
         linear-gradient(90deg, #42d392 0%, #28a36c 25%, #647eff 100%);
 }
 
-
 .web-builder {
     pointer-events: none;
 }
 .web-builder .navbar {
     background-color: white;
-    border-bottom: .1px solid rgba(0, 0, 0, 0.141);
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.141);
     padding: 10px 10px;
     font-size: 12px;
 }
@@ -47,16 +46,16 @@
     color: white;
 }
 
-.builder-txt  {
+.builder-txt {
     margin-top: 50px;
 }
 
-.builder-txt h2  {
+.builder-txt h2 {
     font-size: 20px;
     font-weight: 700;
 }
 
-.builder-txt p  {
+.builder-txt p {
     font-size: 15px;
     font-weight: 300;
 }

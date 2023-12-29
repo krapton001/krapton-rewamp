@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="w-full">
             <div className="max-w-7xl mx-auto lg:min-h-[90vh] items-center  flex flex-col-reverse lg:flex-row  px-4 lg:px-0 py-16 lg:py-20">
                 <div className="">
-                    <h2 className="bg-gradient py-2 text-3xl lg:text-8xl font-bold ">
+                    <h2 className="bg-gradient py-2 text-5xl lg:text-8xl font-bold ">
                         Crafting Visionary Ideas <span className="text-black block">into Digital Realities</span>
                     </h2>
                     <p className="text-gray-600 text-lg lg:text-3xl font-light mt-8">

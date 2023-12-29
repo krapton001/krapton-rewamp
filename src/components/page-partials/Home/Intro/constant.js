@@ -23,4 +23,4 @@ export const autoTypingCode = `
       </div>
    </main>
 </div>
-`
+`;

@@ -14,12 +14,7 @@ const HyperLink = ({ href, title, children, fontSize = 'md', type = 'normal', cl
     /** Renders outline button */
     if (type === 'outline')
         return (
-            <a
-                href={href}
-                title={title}
-                className={`${commonClassName} border border-gray-400 hover:border-primary hover:text-primary transition duration-200 text-gray-500  ${className}`}
-                {...props}
-            >
+            <a href={href} title={title} className={`${commonClassName} border border-gray-400 hover:border-primary hover:text-primary transition duration-200 text-gray-500  ${className}`} {...props}>
                 {children}
             </a>
         );

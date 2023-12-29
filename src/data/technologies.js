@@ -13,5 +13,5 @@ export const technologyIcons = [
     '/assets/custom_icons/technologies/python.webp',
     '/assets/custom_icons/technologies/react.webp',
     '/assets/custom_icons/technologies/swift.webp',
-    '/assets/custom_icons/technologies/vue.webp'
-  ]
+    '/assets/custom_icons/technologies/vue.webp',
+];
