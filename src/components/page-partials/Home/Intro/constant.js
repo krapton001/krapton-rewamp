@@ -18,7 +18,7 @@ export const autoTypingCode = `
             <p>"Embark on a journey of digital creativity and innovation as you begin to craft your website."</p>
          </div>
          <div class="col-xl-6">
-            <img src="/assets/custom_icons/builder-img.png" />
+            <img src="/assets/custom_icons/builder-img.webp" />
          </div>
       </div>
    </main>
