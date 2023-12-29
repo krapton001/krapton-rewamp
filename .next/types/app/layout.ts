@@ -1,4 +1,4 @@
-// File: C:\Users\aliwa\OneDrive\Documents\GitHub\krapton-rewamp\src\app\layout.js
+// File: /Users/suboorkhan/Desktop/untitled folder/krapton-rewamp/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
