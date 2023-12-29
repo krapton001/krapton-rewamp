@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/common/layout/Header'
+import Footer from '@/components/common/layout/Footer'
 
 
 
@@ -12,9 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='font-base'>
+      <body className='font-base bg-white'>
       <Header />
-      {children}</body>
+      {children}
+      <Footer />
+      </body>
     </html>
   )
 }
