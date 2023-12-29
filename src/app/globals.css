@@ -47,16 +47,13 @@
     color: white;
 }
 
-.web-builder main {
-    padding: 100px 30px;
-}
-
 .builder-txt  {
     margin-top: 50px;
 }
 
 .builder-txt h2  {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .builder-txt p  {
