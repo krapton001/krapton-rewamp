@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "port": "next dev -p 3005"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
