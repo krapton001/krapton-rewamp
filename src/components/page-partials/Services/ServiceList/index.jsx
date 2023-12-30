@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import ServiceListCard from './ServiceListCard';
-import { services } from '@/data/services';
 
-const ServiceList = () => {
+const ServiceList = ({ services = [] }) => {
     return (
         <section className="py-20 relative">
             <div className="max-w-7xl mx-auto text-center px-4 xl:px-0">
