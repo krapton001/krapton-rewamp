@@ -1,6 +1,6 @@
 import LazyImg from '@/components/common/LazyImg';
 import ScatteredBg from '@/components/common/ScatteredBg';
-import { technologyIcons } from '@/data/technologies';
+import { technologyData } from '@/data/technologies';
 import React from 'react';
 
 const Technologies = () => {
@@ -17,7 +17,7 @@ const Technologies = () => {
                 </div>
                 <div className="z-10">
                     <div className="flex flex-wrap gap-5 justify-center">
-                        {technologyIcons.map((tech, idx) => (
+                        {technologyData.map((tech, idx) => (
                             <div key={`skill-${idx}`} className="bg-white p-2 border border-gray rounded overflow-hidden w-14 h-14 lg:w-20 lg:h-20 shadow-lg">
                                 <LazyImg loading="lazy" className="object-contain" alt={tech.title} title={tech.title} src={tech.icon} />
                             </div>
