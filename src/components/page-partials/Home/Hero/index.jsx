@@ -4,10 +4,10 @@ import React from 'react';
 const Hero = () => {
     return (
         <section className="w-full relative overflow-hidden">
-        <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
-    <source src="assets/video/bg-2.webm" type="video/mp4" />
-    Your browser does not support the video tag.
-</video>
+            <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+                <source src="assets/video/bg-2.webm" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
             <div className="max-w-7xl mx-auto lg:min-h-[100vh] items-center flex flex-col-reverse lg:flex-row px-4 lg:px-0 py-16 min-h-[80vh] lg:py-20 relative z-10">
