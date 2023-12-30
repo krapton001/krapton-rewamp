@@ -16,7 +16,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white sticky top-0 z-20">
+        <header className="bg-transparent w-screen top-0 z-20 absolute">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:py-1 lg:px-0" aria-label="Global">
                 <div className="flex items-center gap-x-12">
                     <a href="/" className="-m-1.5 p-1.5">
@@ -25,7 +25,7 @@ export default function Header() {
                     </a>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary">
+                            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-100 hover:text-primary">
                                 {item.name}
                             </a>
                         ))}
