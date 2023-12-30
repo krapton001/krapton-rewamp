@@ -1,10 +1,10 @@
-import HomePage from '@/components/page-partials/Home';
 import { HOST } from '@/constants';
 import { webPageSchema } from '@/seo-utils/webPageSchema';
 import { organizationSchema } from '@/seo-utils/organizationSchema';
 import { siteNavigationElement } from '@/seo-utils/siteNavigationElement';
 import { breadCrumbSchema } from '@/seo-utils/breadCrumbSchema';
 import { createMetaData } from '@/seo-utils/CommonMeta';
+import ServicePage from '@/components/page-partials/Services';
 
 const url = `${HOST}/services`;
 const title = `Krapton - Let's build something amazing together`;
@@ -22,7 +22,7 @@ export default function () {
             <script type="application/ld+json" dangerouslySetInnerHTML={organizationSchema()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={siteNavigationElement()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={breadCrumbSchema()} />
-            <HomePage />;
+            <ServicePage />;
         </>
     );
 }
