@@ -112,13 +112,13 @@ const featuredTestimonial = {
                 <LazyImg
                   className="h-10 w-10 flex-none rounded-full bg-gray-50"
                   src={featuredTestimonial.author.imageUrl}
-                  alt=""
+                  alt={featuredTestimonial.author.name}
                 />
                 <div className="flex-auto">
                   <div className="font-semibold">{featuredTestimonial.author.name}</div>
                   <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                 </div>
-                <LazyImg className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
+                <LazyImg className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt={featuredTestimonial.author.name} />
               </figcaption>
             </figure>
             {testimonials.map((columnGroup, columnGroupIdx) => (
@@ -143,7 +143,7 @@ const featuredTestimonial = {
                           <p>{`“${testimonial.body}”`}</p>
                         </blockquote>
                         <figcaption className="mt-6 flex items-center gap-x-4">
-                          <LazyImg className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
+                          <LazyImg className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt={featuredTestimonial.author.name} />
                           <div>
                             <div className="font-semibold">{testimonial.author.name}</div>
                             <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
