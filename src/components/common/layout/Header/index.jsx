@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import HyperLink from '../../HyperLink';
+import LazyImg from '../../LazyImg';
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -21,7 +22,7 @@ export default function Header() {
                 <div className="flex items-center gap-x-12">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Krapton</span>
-                        <img className="h-8 w-auto" src="assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
+                        <LazyImg className="h-8 w-auto" src="assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
                     </a>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
@@ -51,7 +52,7 @@ export default function Header() {
                     <div className="flex items-center justify-between">
                         <a href="/" className="-m-1.5 p-1.5 flex sm:hidden">
                             <span className="sr-only">Krapton</span>
-                            <img className="h-8 w-auto" src="assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
+                            <LazyImg className="h-8 w-auto" src="assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
                         </a>
                         <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700" onClick={() => setMobileMenuOpen(false)}>
                             <span className="sr-only">Close menu</span>
