@@ -1,3 +1,5 @@
+import LazyImg from "@/components/common/LazyImg"
+
 const featuredTestimonial = {
     body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
     author: {
@@ -107,7 +109,7 @@ const featuredTestimonial = {
                 <p>{`“${featuredTestimonial.body}”`}</p>
               </blockquote>
               <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                <img
+                <LazyImg
                   className="h-10 w-10 flex-none rounded-full bg-gray-50"
                   src={featuredTestimonial.author.imageUrl}
                   alt=""
@@ -116,7 +118,7 @@ const featuredTestimonial = {
                   <div className="font-semibold">{featuredTestimonial.author.name}</div>
                   <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                 </div>
-                <img className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
+                <LazyImg className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
               </figcaption>
             </figure>
             {testimonials.map((columnGroup, columnGroupIdx) => (
@@ -141,7 +143,7 @@ const featuredTestimonial = {
                           <p>{`“${testimonial.body}”`}</p>
                         </blockquote>
                         <figcaption className="mt-6 flex items-center gap-x-4">
-                          <img className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
+                          <LazyImg className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
                           <div>
                             <div className="font-semibold">{testimonial.author.name}</div>
                             <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
