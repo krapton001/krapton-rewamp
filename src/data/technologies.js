@@ -1,4 +1,4 @@
-export const technologyIcons = [
+export const technologyData = [
     {
         title: 'PHP',
         description:
@@ -130,5 +130,101 @@ export const technologyIcons = [
         description:
             "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
         icon: '/assets/custom_icons/technologies/Woo-Commerce.webp',
+    },
+    {
+        title: 'Java',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/java.webp',
+    },
+    {
+        title: 'CSharp',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/c-sharp.webp',
+    },
+    {
+        title: 'Svelte',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Svelte.webp',
+    },
+    {
+        title: 'Rust',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Rust.webp',
+    },
+    {
+        title: 'Golang',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Go-Lang.webp',
+    },
+    {
+        title: 'Electron',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/electron-icon.webp',
+    },
+    {
+        title: 'Webpack',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Webpack.webp',
+    },
+    {
+        title: 'Vite',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Vite.webp',
+    },
+    {
+        title: 'Tauri',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/tauri.webp',
+    },
+    {
+        title: 'Tensorflow',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Tensorflow.webp',
+    },
+    {
+        title: 'rxjs',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/rxjs.webp',
+    },
+    {
+        title: 'Typescript',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Typescript.webp',
+    },
+    {
+        title: 'redux',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/redux.webp',
+    },
+    {
+        title: 'node',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/node-js.webp',
+    },
+    {
+        title: 'ionic',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Ionic.webp',
+    },
+    {
+        title: 'Spring boot',
+        description:
+            "PHP which stands for 'Hypertext Preprocessor,' is a popular server-side scripting language designed primarily for web development. Originally created by Rasmus Lerdorf in 1994, PHP has since evolved into a powerful and versatile language used in a vast number of web applications and systems",
+        icon: '/assets/custom_icons/technologies/Spring_Boot.webp',
     },
 ];
