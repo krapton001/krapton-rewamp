@@ -3,6 +3,7 @@ import Hero from './Hero';
 import Intro from './Intro';
 import HomeServices from './HomeServices';
 import Technologies from './Technologies';
+import Testimonials from './Testimonials';
 
 const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ const HomePage = () => {
             <Intro />
             <HomeServices />
             <Technologies />
+            <Testimonials />
         </main>
     );
 };

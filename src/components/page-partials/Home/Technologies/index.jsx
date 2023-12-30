@@ -4,7 +4,7 @@ import React from 'react';
 
 const Technologies = () => {
     return (
-        <section className="py-56 bg-darker">
+        <section className="py-20 lg:py-56 px-4 xl:px-0 bg-darker">
             <ScatteredBg left="10%" width="30%" />
             <div className="mx-auto max-w-7xl gap-16 sm:gap-y-24 grid lg:grid-cols-2 lg:items-center bscontainer">
                 <div className="z-10">
@@ -15,7 +15,7 @@ const Technologies = () => {
                     </p>
                 </div>
                 <div className="z-10">
-                    <div className="flex flex-wrap gap-5">
+                    <div className="flex flex-wrap gap-5 justify-center">
                         {technologyIcons.map((icon, idx) => (
                             <div key={`skill-${idx}`} className="bg-white p-2 border border-gray rounded overflow-hidden w-14 h-14 lg:w-20 lg:h-20 shadow-lg">
                                 <img loading="lazy" className="object-contain" alt={''} title={''} src={icon} />

@@ -36,7 +36,7 @@ const CodeTypingComponent = ({ code, setCode, className, ...props }) => {
     }, []);
 
     return (
-        <div className={`${className} p-4 overflow-scroll text-code shadow-xl rounded-xl bg-black h-96`} {...props} ref={ref}>
+        <div className={`${className} p-4 overflow-scroll codeContainer text-code shadow-xl rounded-xl bg-black h-96`} {...props} ref={ref}>
             <pre>{typedCode}</pre>
         </div>
     );

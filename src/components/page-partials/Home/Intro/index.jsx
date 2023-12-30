@@ -19,5 +19,5 @@ const Intro = () => {
 export default Intro;
 
 // <section className="w-full">
-//     {/* <div className="max-w-7xl mx-auto lg:min-h-[90vh] items-center  flex flex-col-reverse lg:flex-row  px-4 lg:px-0 py-16 lg:py-20"></div> */}
+//     {/* <div className="max-w-7xl mx-auto lg:min-h-[90vh] items-center  flex flex-col-reverse lg:flex-row  px-4 xl:px-0 py-16 lg:py-20"></div> */}
 // </section>
