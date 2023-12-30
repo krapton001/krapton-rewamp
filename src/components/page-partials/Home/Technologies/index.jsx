@@ -16,9 +16,9 @@ const Technologies = () => {
                 </div>
                 <div className="z-10">
                     <div className="flex flex-wrap gap-5 justify-center">
-                        {technologyIcons.map((icon, idx) => (
+                        {technologyIcons.map((tech, idx) => (
                             <div key={`skill-${idx}`} className="bg-white p-2 border border-gray rounded overflow-hidden w-14 h-14 lg:w-20 lg:h-20 shadow-lg">
-                                <img loading="lazy" className="object-contain" alt={''} title={''} src={icon} />
+                                <img loading="lazy" className="object-contain" alt={''} title={''} src={tech.icon} />
                             </div>
                         ))}
                     </div>
