@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <section className="flex items-center bg-darker py-20">
             <div className="max-w-7xl mx-auto min-h-[90vh] justify-center flex flex-col">
-                <h3 className="text-primary text-center mb-4 text-4xl md:text-5xl font-extrabold lg:px-20">Krapton Transforming Challenges into Innovations</h3>
+                <h3 className="text-white text-center mb-4 text-3xl sm:text-4xl md:text-5xl tracking-tight font-extrabold">Krapton Transforming <span className='text-primary block'>Challenges into Revolutionary Innovations</span></h3>
                 <p className="text-gray-300 text-center text-lg mb-20 lg:px-20">
                     Krapton stands at the forefront of innovation, redefining the very essence of progress with each stride it takes. This isn't just a company; it's a beacon of transformative power,
                     turning daunting challenges into groundbreaking innovations
