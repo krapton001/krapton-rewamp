@@ -7,12 +7,11 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto lg:min-h-[90vh] items-center flex justify-center px-4 xl:px-0 py-16 lg:py-20">
                 <div className="text-center">
                     <h2 className="text-primary py-2 text-5xl lg:text-8xl font-bold ">
-                    Revolutionizing  <span className="text-white block">Software Development</span>
+                        We’re On the Lookout<span className="text-white block">For Extraordinary Talent</span>
                     </h2>
-                    <p className="text-gray-100 my-5 text-2xl font-light">Experience the Pinnacle of Achievement with Our Expertly Curated IT Services, Tailored for Your Success!</p>
-                    <div className="flex justify-center items-center gap-x-5 mt-10">
-                        <HyperLink>Get Started</HyperLink>
-                        <HyperLink type="outline">Shoot a Message</HyperLink>
+                    <p className="text-gray-100 my-5 text-2xl font-light">If you&apos;re motivated, intelligent, passionate and looking for a meaningful work environment, Codenia Technologies LLP may just be the last place you send your resume to.</p>
+                    <div className="flex justify-center items-center text-2xl gap-x-5 mt-10">
+                        <HyperLink>See openings</HyperLink>                        
                     </div>
                 </div>
             </div>
