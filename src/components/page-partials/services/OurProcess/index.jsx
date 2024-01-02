@@ -54,6 +54,21 @@ const frontendWeb = [
     },
 ];
 
+const desktop = [
+    {
+        spanText: 'Tauri',
+        imgAlt: 'Tauri icon',
+        imgSrc: 'assets/processImages/icon-tauri.png',
+        cardContent: 'Tauri is suitable for developing small-sized desktop applications that can precisely render fast performance.',
+    },
+    {
+        spanText: 'Electron JS',
+        imgAlt: 'Electron icon',
+        imgSrc: 'assets/processImages/icon-electron.png',
+        cardContent: 'Electron js is a good option to build complex, heavy-duty applications.',
+    },
+]
+
 const database = [
     {
         spanText: 'MySQL',
@@ -133,6 +148,43 @@ const apiWeb = [
     },
 ];
 
+const android = [
+    {
+        spanText: 'Dart',
+        imgAlt: 'Dart icon',
+        imgSrc: 'assets/processImages/icon-dart.png',
+        cardContent: 'Dart is a client-optimized language for fast apps.',
+    },
+    {
+        spanText: 'Kotlin',
+        imgAlt: 'Kotlin icon',
+        imgSrc: 'assets/processImages/icon-kotlin.png',
+        cardContent: 'A modern programming language with multiplatform support.',
+    },
+];
+
+const appHybrid = [
+    {
+        "spanText": "Flutter",
+        "imgAlt": "Flutter",
+        "imgSrc": "assets/processImages/icon-flutter.png",
+        "cardContent": "Build mobile apps for Android & iOS with single code base."
+    },
+    {
+        "spanText": "Ionic",
+        "imgAlt": "Ionic",
+        "imgSrc": "assets/processImages/icon-iconic.png",
+        "cardContent": "Build apps with one codebase for many platforms."
+    },
+    {
+        "spanText": "React Native",
+        "imgAlt": "React Native",
+        "imgSrc": "assets/processImages/icon-reactnative.png",
+        "cardContent": "Create native apps for Android and iOS using React."
+    }
+]
+
+
 const OurProcess = () => {
     return (
         <section className="bg-darker w-full">
@@ -146,8 +198,8 @@ const OurProcess = () => {
                 </div>
                 <div className="flex flex-col xl:flex-row justify-between py-5 flex-wrap">
                     <div className="relative w-full xl:w-1/2 flex-none block px-0 lg:px-5 xl:px-10">
-                        <h5 className="text-center -mt-2 text-white font-bold text-3xl mb-10">Web</h5>
-                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tr-none rounded-br-none border-r-0 h-[190px] w-[210px] top-[24px] left-[30px] absolute">
+                        <h5 className="text-center -mt-2 text-white font-bold text-3xl mb-10">Web / Desktop</h5>
+                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tr-none rounded-br-none border-r-0 h-[190px] w-[170px] top-[10px] left-[30px] absolute">
                             <div className="top-[80px] absolute -left-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500" />
                             </div>
@@ -259,7 +311,7 @@ const OurProcess = () => {
                                                     <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
                                                         <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
                                                     </div>
-                                                    <div className="hidden absolute left-[100%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
+                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
                                                         <div className="bg-[#7957d5] rounded-md shadow-none relative">
                                                             <div className="p-2 text-white">
                                                                 <p>{li.cardContent}</p>
@@ -270,6 +322,32 @@ const OurProcess = () => {
                                             );
                                         })}
                                     </ul>
+                                </div>
+                                <div className='relative mt-10'>
+                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Desktop</h6>
+                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
+                                    <ul className="p-0 bg-transparent">
+                                        {desktop.map((li) => {
+                                            return (
+                                                <li
+                                                    key={li.spanText}
+                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
+                                                >
+                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
+                                                    </div>
+                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
+                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
+                                                            <div className="p-2 text-white">
+                                                                <p>{li.cardContent}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -284,13 +362,13 @@ const OurProcess = () => {
                     </div>
                     <div className="relative w-full xl:w-1/2 flex-none block px-10">
                         <h5 className="text-center -mt-2 text-white font-bold text-3xl mb-10">Mobile</h5>
-                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-bl-none border-l-0 h-[190px] w-[160px] top-[24px] right-[80px] absolute">
-                           <div className="left-[60px] absolute -bottom-[15px]">
+                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-bl-none border-l-0 h-[190px] w-[160px] top-[10px] right-[80px] absolute">
+                            <div className="left-[60px] absolute -bottom-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 rotate-90" />
                             </div>
                         </div>
                         <div className="border-4 border-dashed border-primary rounded-[25px] rounded-tl-none rounded-bl-none border-l-0 h-[140px] w-[160px] top-[380px] right-[80px] absolute">
-                        <div className="top-[50px] absolute -right-[15px]">
+                            <div className="top-[50px] absolute -right-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500" />
                             </div>
                         </div>
@@ -310,106 +388,79 @@ const OurProcess = () => {
                             <img src="assets/processImages/we-build-mobile.png" className=" w-[250px] h-[400px] object-contain z-10 relative" />
                         </figure>
                         <h6 className="text-center text-white font-bold text-3xl mt-8 px-2 bg-darker">Tech Stack</h6>
-                        <div className="columns is-multiline is-mobile is-centered is-justify-content-space-evenly is-relative">
+                        <div className="flex justify-evenly flex-wrap mt-10">
                             <div className="has-dashed-border border-6" />
-                            <div className="column is-5">
-                                <h6 className="has-margin-bottom-10 has-text-centered has-text-blue title is-6">iOS</h6>
-                                <div className="card">
-                                    <div className="card-content">
-                                        <ul className="is-paddingless">
-                                            <li>
-                                                <a>
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-swift.png" /> <span>Swift</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>The official language for iOS mobile app development.</p>
-                                                        </div>
+                            <div className="flex-none w-[45%] xl:w-[40%]">
+                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">iOS</h6>
+                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
+                                    <ul className="p-0 bg-transparent">
+                                        <li className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500">
+                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                <img alt="Swift Icon" className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-swift.png" /> <span>Swift</span>
+                                            </div>
+                                            <div className="hidden absolute left-[100%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
+                                                <div className="bg-[#7957d5] rounded-md shadow-none relative">
+                                                    <div className="p-2 text-white">
+                                                        <p>The official language for iOS mobile app development.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="column is-6-touch is-5-desktop">
-                                <h6 className="has-margin-bottom-10 has-text-centered has-text-blue title is-6">ANDROID</h6>
-                                <div className="card has-margin-bottom-50">
-                                    <div className="card-content">
-                                        <ul className="is-paddingless">
-                                            <li>
-                                                <a>
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-dart.png" /> <span>Dart</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>Dart is a client-optimized language for fast apps.</p>
+                            <div className="flex-none w-[45%] xl:w-[40%]">
+                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">ANDROID</h6>
+                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
+                                    <ul className="p-0 bg-transparent">
+                                        {android.map((li) => {
+                                            return (
+                                                <li
+                                                    key={li.spanText}
+                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
+                                                >
+                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
+                                                    </div>
+                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
+                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
+                                                            <div className="p-2 text-white">
+                                                                <p>{li.cardContent}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a>
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-kotlin.png" /> <span>Kotlin</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>A modern programming language with multiplatform support.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="column is-6-touch is-5-desktop hybrid-tech">
-                                <h6 className="has-margin-bottom-10 has-text-centered has-text-blue title is-6">Hybrid Apps Tech Stack</h6>
-                                <div className="card">
-                                    <div className="card-content">
-                                        <ul className="is-paddingless">
-                                            <li>
-                                                <a href="/technologies/mobility/flutter-app-development">
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-flutter.png" /> <span>Flutter</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>Build mobile apps for Android &amp; iOS with single code base.</p>
+                            <div className="flex-none w-[45%] xl:w-[40%]">
+                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Hybrid Apps Tech Stack</h6>
+                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
+                                        <ul className="p-0 bg-transparent">
+                                        {appHybrid.map((li) => {
+                                            return (
+                                                <li
+                                                    key={li.spanText}
+                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
+                                                >
+                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
+                                                    </div>
+                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
+                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
+                                                            <div className="p-2 text-white">
+                                                                <p>{li.cardContent}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="/technologies/mobility/ionic-app-development">
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-iconic.png" /> <span>Ionic</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>Build apps with one codebase for many platforms.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="/technologies/mobility/reactnative-app-development">
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-reactnative.png" /> <span>React Native</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>Create native apps for Android and iOS using React.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                                </li>
+                                            );
+                                        })}
                                         </ul>
                                     </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -417,11 +468,11 @@ const OurProcess = () => {
                         <div className="columns is-align-items-center is-centered">
                             <div className="column is-10 is-relative has-tooltip-right">
                                 <div className="card">
-                                    <div className="card-content">
-                                        <ul className="is-paddingless">
+                                    
+                                        <ul className="p-0 bg-transparent">
                                             <li>
                                                 <a href="/technologies/frameworks/webdriverio-testing-services">
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-webdriver.png" /> <span>WebDriverIO</span>
+                                                    <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-webdriver.png" /> <span>WebDriverIO</span>
                                                 </a>
                                                 <div className="tooltip-content">
                                                     <div className="card">
@@ -432,9 +483,9 @@ const OurProcess = () => {
                                                 </div>
                                             </li>
                                             <li>
-                                                <a>
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-nightwatch.png" /> <span>NightWatch.js</span>
-                                                </a>
+                                                <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                    <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-nightwatch.png" /> <span>NightWatch.js</span>
+                                                </div>
                                                 <div className="tooltip-content">
                                                     <div className="card">
                                                         <div className="card-content">
@@ -444,9 +495,9 @@ const OurProcess = () => {
                                                 </div>
                                             </li>
                                             <li>
-                                                <a>
-                                                    <img alt className="has-margin-right-15 lazyLoad isLoaded" src="assets/processImages/icon-laraveldusk.png" /> <span>Laravel Dusk</span>
-                                                </a>
+                                                <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                    <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-laraveldusk.png" /> <span>Laravel Dusk</span>
+                                                </div>
                                                 <div className="tooltip-content">
                                                     <div className="card">
                                                         <div className="card-content">
@@ -457,7 +508,7 @@ const OurProcess = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                
                                 <figure className="image">
                                     <img alt src="assets/processImages/we-build-automation-testing.png" className="lazyLoad isLoaded" />
                                 </figure>
@@ -537,107 +588,6 @@ const OurProcess = () => {
                                                         </a>
                                                     </figcaption>
                                                 </figure>
-                                            </div>
-                                        </div>
-                                        <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly is-relative">
-                                            <div className="has-dashed-border border-9" />
-                                            <div className="column is-6-mobile is-4-tablet is-3-desktop">
-                                                <h5 className="has-text-centered has-margin-bottom-10 title is-5">Web Solutions</h5>
-                                                <div className="is-relative has-tooltip-right">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <ul className="is-paddingless has-list-img">
-                                                                <li>
-                                                                    <a href="/services/saas-product-development">
-                                                                        <span>SaaS Products</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/services/ecommerce-development">
-                                                                        <span>eCommerce</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/services/mvp-development">
-                                                                        <span>MVP Development</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/services/api-development">
-                                                                        <span>API Development</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/services/cms-development">
-                                                                        <span>Custom CMS</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/services/application-development">
-                                                                        <span>Web Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>eLearning (LMS)</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figure className="has-image-left is-hidden-touch">
-                                                        <img alt src="assets/processImages/we-build-solution-icon.png" className="lazyLoad isLoaded" />
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div className="column is-6-mobile is-4-tablet is-3-desktop">
-                                                <h5 className="has-text-centered has-margin-bottom-10 title is-5">Mobile Solutions</h5>
-                                                <div className="is-relative has-tooltip-right">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <ul className="is-paddingless has-list-img">
-                                                                <li>
-                                                                    <a>
-                                                                        <span>Streaming Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>Real Time Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>Financial Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>eCommerce Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>Chat &amp; Video Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>Utility Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a>
-                                                                        <span>Productivity Apps</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <figure className="has-image-left is-hidden-touch">
-                                                        <img alt src="assets/processImages/we-build-solution-icon.png" className="lazyLoad isLoaded" />
-                                                    </figure>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

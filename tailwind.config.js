@@ -39,7 +39,7 @@ module.exports = {
                     100: '#E2E2D5',
                     200: '#888883',
                 },
-                darker: '#0f172a',
+                darker: '#020420',
                 primaryDark: '#1d935e',
                 code: '#9cdcfe',
             },
