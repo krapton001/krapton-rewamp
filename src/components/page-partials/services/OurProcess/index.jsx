@@ -1,189 +1,6 @@
-import React from 'react';
-
-const backendWeb = [
-    {
-        spanText: 'Adonis JS',
-        imgAlt: 'adonis js ',
-        imgSrc: 'assets/processImages/icon-adonis.png',
-        cardContent: 'A fully featured web framework on Node.js',
-    },
-    {
-        spanText: 'Express JS',
-        imgAlt: 'express js',
-        imgSrc: 'assets/processImages/icon-express.png',
-        cardContent: 'Fast, unopinionated, minimalist web framework for Node.js',
-    },
-    {
-        spanText: 'Laravel',
-        imgAlt: 'laravel image',
-        imgSrc: 'assets/processImages/icon-laravel.png',
-        cardContent: 'Laravel is a web application framework for backend development.',
-    },
-];
-
-const frontendWeb = [
-    {
-        spanText: 'Next JS',
-        imgAlt: 'Next JS icon',
-        imgSrc: 'assets/processImages/icon-next.png',
-        cardContent: 'Next.js enables you to create full-stack Web applications ',
-    },
-    {
-        spanText: 'Angular',
-        imgAlt: 'Angular Icon',
-        imgSrc: 'assets/processImages/icon-vue.png',
-        cardContent: 'Angular lets you start small and supports you as your team and apps grow.',
-    },
-    {
-        spanText: 'Vue JS',
-        imgAlt: 'Vue JS Icon',
-        imgSrc: 'assets/processImages/icon-vue.png',
-        cardContent: 'The progressive Javascript Frontend framework.',
-    },
-    {
-        spanText: 'Nuxt JS',
-        imgAlt: 'Nuxt JS icon',
-        imgSrc: 'assets/processImages/icon-nuxt.png',
-        cardContent: 'The Intuitive VueJs Framework for Frontend Development.',
-    },
-    {
-        spanText: 'React JS',
-        imgAlt: 'React JS icon',
-        imgSrc: 'assets/processImages/icon-react.png',
-        cardContent: 'A Javascript library for building frontend user interfaces.',
-    },
-];
-
-const desktop = [
-    {
-        spanText: 'Tauri',
-        imgAlt: 'Tauri icon',
-        imgSrc: 'assets/processImages/icon-tauri.png',
-        cardContent: 'Tauri is suitable for developing small-sized desktop applications that can precisely render fast performance.',
-    },
-    {
-        spanText: 'Electron JS',
-        imgAlt: 'Electron icon',
-        imgSrc: 'assets/processImages/icon-electron.png',
-        cardContent: 'Electron js is a good option to build complex, heavy-duty applications.',
-    },
-]
-
-const database = [
-    {
-        spanText: 'MySQL',
-        imgAlt: 'MySQL',
-        imgSrc: 'assets/processImages/icon-mysql.png',
-        cardContent: "The world's most popular open source database.",
-    },
-    {
-        spanText: 'Rethink DB',
-        imgAlt: 'Rethink DB',
-        imgSrc: 'assets/processImages/icon-rethinkdb.png',
-        cardContent: 'The open-source database for the real-time Web.',
-    },
-    {
-        spanText: 'Mongo DB',
-        imgAlt: 'Mongo DB',
-        imgSrc: 'assets/processImages/icon-mongodb.png',
-        cardContent: 'Fast reliable schema-less database.',
-    },
-    {
-        spanText: 'Fauna DB',
-        imgAlt: 'Fauna DB',
-        imgSrc: 'assets/processImages/icon-faunadb.png',
-        cardContent: 'A distributed document-relational database delivered as a cloud API.',
-    },
-    {
-        spanText: 'Firebase',
-        imgAlt: 'Firebase',
-        imgSrc: 'assets/processImages/icon-firebase.png',
-        cardContent: 'Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.',
-    },
-    {
-        spanText: 'Supabase',
-        imgAlt: 'Supabase',
-        imgSrc: 'assets/processImages/icon-supabase.png',
-        cardContent:
-            'Supabase is an open source Firebase alternative. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings.',
-    },
-];
-
-const apiWeb = [
-    {
-        spanText: 'Fastify',
-        imgAlt: 'Fastify',
-        imgSrc: 'assets/processImages/icon-fastify.png',
-        cardContent: 'Fast and low overhead API development framework, for Node.js',
-    },
-    {
-        spanText: 'Restify',
-        imgAlt: 'Restify',
-        imgSrc: 'assets/processImages/icon-restify.png',
-        cardContent: 'The future of Node.js Rest development.',
-    },
-    {
-        spanText: 'Express JS',
-        imgAlt: 'Express JS',
-        imgSrc: 'assets/processImages/icon-express.png',
-        cardContent: 'Fast, unopinionated, minimalist web framework for Node.js',
-    },
-    {
-        spanText: 'Lumen',
-        imgAlt: 'Lumen',
-        imgSrc: 'assets/processImages/icon-lumen.png',
-        cardContent: 'A microframework by Laravel for API development.',
-    },
-    {
-        spanText: 'Koa.js',
-        imgAlt: 'Koa.js',
-        imgSrc: 'assets/processImages/icon-koa.png',
-        cardContent: 'Next Generation web framework for Node.js',
-    },
-    {
-        spanText: 'Hapi.js',
-        imgAlt: 'Hapi.js',
-        imgSrc: 'assets/processImages/icon-hapi.png',
-        cardContent: 'The Simple, secure framework developers trust.',
-    },
-];
-
-const android = [
-    {
-        spanText: 'Dart',
-        imgAlt: 'Dart icon',
-        imgSrc: 'assets/processImages/icon-dart.png',
-        cardContent: 'Dart is a client-optimized language for fast apps.',
-    },
-    {
-        spanText: 'Kotlin',
-        imgAlt: 'Kotlin icon',
-        imgSrc: 'assets/processImages/icon-kotlin.png',
-        cardContent: 'A modern programming language with multiplatform support.',
-    },
-];
-
-const appHybrid = [
-    {
-        "spanText": "Flutter",
-        "imgAlt": "Flutter",
-        "imgSrc": "assets/processImages/icon-flutter.png",
-        "cardContent": "Build mobile apps for Android & iOS with single code base."
-    },
-    {
-        "spanText": "Ionic",
-        "imgAlt": "Ionic",
-        "imgSrc": "assets/processImages/icon-iconic.png",
-        "cardContent": "Build apps with one codebase for many platforms."
-    },
-    {
-        "spanText": "React Native",
-        "imgAlt": "React Native",
-        "imgSrc": "assets/processImages/icon-reactnative.png",
-        "cardContent": "Create native apps for Android and iOS using React."
-    }
-]
-
+import React, { Fragment } from 'react';
+import { android, apiWeb, appHybrid, backendWeb, database, desktop, frontendWeb } from './constant';
+import ProcessList from './ProcessList';
 
 const OurProcess = () => {
     return (
@@ -222,21 +39,9 @@ const OurProcess = () => {
                                         <ul className="p-0 bg-transparent">
                                             {backendWeb.map((li) => {
                                                 return (
-                                                    <li
-                                                        key={li.spanText}
-                                                        className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] hover:bg-white border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8  transition duration-500"
-                                                    >
-                                                        <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                            <img alt={li.imgAlt} className="mr-5" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                        </div>
-                                                        <div className="hidden absolute left-[100%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                            <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                                <div className="p-2 text-white">
-                                                                    <p>{li.cardContent}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                    <Fragment key={li.spanText}>
+                                                        <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                    </Fragment>
                                                 );
                                             })}
                                         </ul>
@@ -248,21 +53,9 @@ const OurProcess = () => {
                                         <ul className="p-0 bg-transparent">
                                             {frontendWeb.map((li) => {
                                                 return (
-                                                    <li
-                                                        key={li.spanText}
-                                                        className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
-                                                    >
-                                                        <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                            <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                        </div>
-                                                        <div className="hidden absolute left-[100%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                            <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                                <div className="p-2 text-white">
-                                                                    <p>{li.cardContent}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                    <Fragment key={li.spanText}>
+                                                        <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                    </Fragment>
                                                 );
                                             })}
                                         </ul>
@@ -275,21 +68,9 @@ const OurProcess = () => {
                                         <ul className="p-0 bg-transparent">
                                             {database.map((li) => {
                                                 return (
-                                                    <li
-                                                        key={li.spanText}
-                                                        className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
-                                                    >
-                                                        <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                            <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                        </div>
-                                                        <div className="hidden absolute left-[100%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                            <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                                <div className="p-2 text-white">
-                                                                    <p>{li.cardContent}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                    <Fragment key={li.spanText}>
+                                                        <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                    </Fragment>
                                                 );
                                             })}
                                         </ul>
@@ -304,50 +85,26 @@ const OurProcess = () => {
                                     <ul className="p-0 bg-transparent">
                                         {apiWeb.map((li) => {
                                             return (
-                                                <li
-                                                    key={li.spanText}
-                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
-                                                >
-                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                    </div>
-                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                            <div className="p-2 text-white">
-                                                                <p>{li.cardContent}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
+                                                <Fragment key={li.spanText}>
+                                                    <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                </Fragment>
                                             );
                                         })}
                                     </ul>
                                 </div>
-                                <div className='relative mt-10'>
-                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Desktop</h6>
-                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
-                                    <ul className="p-0 bg-transparent">
-                                        {desktop.map((li) => {
-                                            return (
-                                                <li
-                                                    key={li.spanText}
-                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
-                                                >
-                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                    </div>
-                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                            <div className="p-2 text-white">
-                                                                <p>{li.cardContent}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            );
-                                        })}
-                                    </ul>
-                                </div>
+                                <div className="relative mt-10">
+                                    <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Desktop</h6>
+                                    <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
+                                        <ul className="p-0 bg-transparent">
+                                            {desktop.map((li) => {
+                                                return (
+                                                    <Fragment key={li.spanText}>
+                                                        <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                    </Fragment>
+                                                );
+                                            })}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -415,21 +172,9 @@ const OurProcess = () => {
                                     <ul className="p-0 bg-transparent">
                                         {android.map((li) => {
                                             return (
-                                                <li
-                                                    key={li.spanText}
-                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
-                                                >
-                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                    </div>
-                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                            <div className="p-2 text-white">
-                                                                <p>{li.cardContent}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
+                                                <Fragment key={li.spanText}>
+                                                    <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                </Fragment>
                                             );
                                         })}
                                     </ul>
@@ -438,29 +183,16 @@ const OurProcess = () => {
                             <div className="flex-none w-[45%] xl:w-[40%]">
                                 <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Hybrid Apps Tech Stack</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
-                                        <ul className="p-0 bg-transparent">
+                                    <ul className="p-0 bg-transparent">
                                         {appHybrid.map((li) => {
                                             return (
-                                                <li
-                                                    key={li.spanText}
-                                                    className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500"
-                                                >
-                                                    <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                        <img alt={li.imgAlt} className="mr-5 w-[30px] h-[30px] object-contain" src={li.imgSrc} /> <span>{li.spanText}</span>
-                                                    </div>
-                                                    <div className="hidden absolute left-[88%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                        <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                            <div className="p-2 text-white">
-                                                                <p>{li.cardContent}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
+                                                <Fragment key={li.spanText}>
+                                                    <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                </Fragment>
                                             );
                                         })}
-                                        </ul>
-                                    </div>
-                                
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -468,47 +200,46 @@ const OurProcess = () => {
                         <div className="columns is-align-items-center is-centered">
                             <div className="column is-10 is-relative has-tooltip-right">
                                 <div className="card">
-                                    
-                                        <ul className="p-0 bg-transparent">
-                                            <li>
-                                                <a href="/technologies/frameworks/webdriverio-testing-services">
-                                                    <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-webdriver.png" /> <span>WebDriverIO</span>
-                                                </a>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>Next-gen browser and mobile automation test framework for Node.js</p>
-                                                        </div>
+                                    <ul className="p-0 bg-transparent">
+                                        <li>
+                                            <a href="/technologies/frameworks/webdriverio-testing-services">
+                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-webdriver.png" /> <span>WebDriverIO</span>
+                                            </a>
+                                            <div className="tooltip-content">
+                                                <div className="card">
+                                                    <div className="card-content">
+                                                        <p>Next-gen browser and mobile automation test framework for Node.js</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                    <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-nightwatch.png" /> <span>NightWatch.js</span>
-                                                </div>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>End-to-end automated software testing.</p>
-                                                        </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-nightwatch.png" /> <span>NightWatch.js</span>
+                                            </div>
+                                            <div className="tooltip-content">
+                                                <div className="card">
+                                                    <div className="card-content">
+                                                        <p>End-to-end automated software testing.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                    <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-laraveldusk.png" /> <span>Laravel Dusk</span>
-                                                </div>
-                                                <div className="tooltip-content">
-                                                    <div className="card">
-                                                        <div className="card-content">
-                                                            <p>Laravel Dusk provides simple end-to-end testing and browser automation.</p>
-                                                        </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
+                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-laraveldusk.png" /> <span>Laravel Dusk</span>
+                                            </div>
+                                            <div className="tooltip-content">
+                                                <div className="card">
+                                                    <div className="card-content">
+                                                        <p>Laravel Dusk provides simple end-to-end testing and browser automation.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <figure className="image">
                                     <img alt src="assets/processImages/we-build-automation-testing.png" className="lazyLoad isLoaded" />
                                 </figure>

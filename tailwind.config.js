@@ -43,9 +43,9 @@ module.exports = {
                 primaryDark: '#1d935e',
                 code: '#9cdcfe',
             },
-            boxShadow:{
-                processCard:'5px 5px 15px 0px #98b7fa96 '
-            }
+            boxShadow: {
+                processCard: '5px 5px 15px 0px #98b7fa96 ',
+            },
         },
     },
     plugins: [],

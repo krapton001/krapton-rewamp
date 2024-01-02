@@ -9,7 +9,7 @@ const ServiceListCard = ({ service }) => {
             <div className="px-5 py-10">
                 <LazyImg src={icon} className="h-20 w-20  mb-2" />
                 <div className="font-bold text-xl">{title}</div>
-                <p className='mt-5 text-gray-500 text-sm text-left'>{description}</p>
+                <p className="mt-5 text-gray-500 text-sm text-left">{description}</p>
             </div>
         </div>
     );

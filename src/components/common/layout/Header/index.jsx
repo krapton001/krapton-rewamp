@@ -15,23 +15,21 @@ const navigation = [
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const onCloseDialog = () =>{
-
-    }
+    const onCloseDialog = () => {};
 
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        const offset = window.scrollY;
-        setIsScrolled(offset > 0);
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            setIsScrolled(offset > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     return (
