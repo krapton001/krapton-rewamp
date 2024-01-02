@@ -151,18 +151,12 @@ const OurProcess = () => {
                                 <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">iOS</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
-                                        <li className="group flex items-center  bg-[#dfeffc] border-t-[1px] border-t-[#fafcfe] border-b-[1px] border-b-[#d8d9fb] text-[#2e6ad6] p-3 lg:pl-5 xl:pl-8 hover:bg-white  transition duration-500">
-                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                <img alt="Swift Icon" className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-swift.png" /> <span>Swift</span>
-                                            </div>
-                                            <div className="hidden absolute left-[100%] group-hover:flex  transform translate-x-5 w-[275px] z-50">
-                                                <div className="bg-[#7957d5] rounded-md shadow-none relative">
-                                                    <div className="p-2 text-white">
-                                                        <p>The official language for iOS mobile app development.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        <ProcessList
+                                            spanText={'Swift'}
+                                            imgAlt={'Swift Icon'}
+                                            imgSrc={'assets/processImages/icon-swift.png'}
+                                            cardContent="The official language for iOS mobile app development."
+                                        />
                                     </ul>
                                 </div>
                             </div>
