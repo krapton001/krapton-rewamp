@@ -181,3 +181,24 @@ export const appHybrid = [
         cardContent: 'Create native apps for Android and iOS using React.',
     },
 ];
+
+export const testing = [
+    {
+        spanText: 'WebDriverIO',
+        imgAlt: '',
+        imgSrc: 'assets/processImages/icon-webdriver.png',
+        cardContent: 'Next-gen browser and mobile automation test framework for Node.js',
+    },
+    {
+        spanText: 'NightWatch.js',
+        imgAlt: '',
+        imgSrc: 'assets/processImages/icon-nightwatch.png',
+        cardContent: 'End-to-end automated software testing.',
+    },
+    {
+        spanText: 'Laravel Dusk',
+        imgAlt: '',
+        imgSrc: 'assets/processImages/icon-laraveldusk.png',
+        cardContent: 'Laravel Dusk provides simple end-to-end testing and browser automation.',
+    },
+];

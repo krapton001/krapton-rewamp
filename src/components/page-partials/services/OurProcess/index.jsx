@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { android, apiWeb, appHybrid, backendWeb, database, desktop, frontendWeb } from './constant';
+import { android, apiWeb, appHybrid, backendWeb, database, desktop, frontendWeb, testing } from './constant';
 import ProcessList from './ProcessList';
 
 const OurProcess = () => {
@@ -190,132 +190,99 @@ const OurProcess = () => {
                             </div>
                         </div>
                     </div>
-                    <div id="scroll-div" className="column is-12 is-relative automation-testing connection-border">
-                        <div className="columns is-align-items-center is-centered">
-                            <div className="column is-10 is-relative has-tooltip-right">
-                                <div className="card">
+                    <div id="scroll-div" className="relative flex w-full mt-10">
+                        <div className="flex relative w-full justify-center h-[440px]">
+                            <div className="flex self-center  z-10 relative px-20 w-full lg:w-1/2">
+                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm  shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
-                                        <li>
-                                            <a href="/technologies/frameworks/webdriverio-testing-services">
-                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-webdriver.png" /> <span>WebDriverIO</span>
-                                            </a>
-                                            <div className="tooltip-content">
-                                                <div className="card">
-                                                    <div className="card-content">
-                                                        <p>Next-gen browser and mobile automation test framework for Node.js</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-nightwatch.png" /> <span>NightWatch.js</span>
-                                            </div>
-                                            <div className="tooltip-content">
-                                                <div className="card">
-                                                    <div className="card-content">
-                                                        <p>End-to-end automated software testing.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-laraveldusk.png" /> <span>Laravel Dusk</span>
-                                            </div>
-                                            <div className="tooltip-content">
-                                                <div className="card">
-                                                    <div className="card-content">
-                                                        <p>Laravel Dusk provides simple end-to-end testing and browser automation.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        {testing.map((li) => {
+                                            return (
+                                                <Fragment key={li.spanText}>
+                                                    <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                </Fragment>
+                                            );
+                                        })}
                                     </ul>
                                 </div>
-
-                                <figure className="image">
-                                    <img alt src="assets/processImages/we-build-automation-testing.png" className="lazyLoad isLoaded" />
-                                </figure>
-                                <h5 className="title is-4 has-opacity-100">
+                            </div>
+                            <div className="w-full lg:w-1/2">
+                                <h5 className="text-white font-bold text-3xl mt-8 px-2 ">
                                     Automation <br /> Testing
                                 </h5>
                             </div>
+
+                            <figure className="absolute w-full h-full">
+                                <img alt src="assets/processImages/we-build-automation-testing.png" className="w-full  object-contain" />
+                            </figure>
                         </div>
+
                         <div className="has-arrow arrow-9">
                             <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
                         </div>
                     </div>
-                    <div className="column is-12">
-                        <div className="collapse">
-                            <div className="collapse-trigger" />
-                            <div id="contentIdForA11y2" className="collapse-content">
-                                <div className="columns is-multiline is-mobile">
-                                    <div className="column is-12 devops connection-border has-margin-bottom-25">
-                                        <h5 className="has-text-centered has-margin-bottom-30 title is-4">DevOps</h5>
-                                        <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly">
-                                            <div className="column is-full-touch is-6-desktop is-flex is-justify-content-space-around has-text-centered connection-border-horizontal">
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-github.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>GitHub</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-gitlab.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>GitLab</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-bit-bucket.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>Bitbucket</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="has-arrow arrow-10">
-                                            <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
-                                        </div>
-                                    </div>
-                                    <div className="column is-12 deployment">
-                                        <h5 className="has-text-centered has-margin-bottom-30 title is-4">Deployment</h5>
-                                        <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly has-margin-bottom-90">
-                                            <div className="column is-full-touch is-6-desktop is-flex is-justify-content-space-around has-text-centered connection-border-horizontal">
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-aws.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>AWS</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-google-cloud.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>Google Cloud</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-cloud-services.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>Other Cloud Services</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div className="">
+                        <div className="column is-12 devops connection-border has-margin-bottom-25">
+                            <h5 className="text-center text-white font-bold text-3xl mt-8 px-2 bg-darker">DevOps</h5>
+                            <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly">
+                                <div className="column is-full-touch is-6-desktop is-flex is-justify-content-space-around has-text-centered connection-border-horizontal">
+                                    <figure className="image">
+                                        <img alt src="assets/processImages/we-build-github.png" className="lazyLoad isLoaded" />
+                                        <figcaption>
+                                            <a>
+                                                <small>GitHub</small>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure className="image">
+                                        <img alt src="assets/processImages/we-build-gitlab.png" className="lazyLoad isLoaded" />
+                                        <figcaption>
+                                            <a>
+                                                <small>GitLab</small>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure className="image">
+                                        <img alt src="assets/processImages/we-build-bit-bucket.png" className="lazyLoad isLoaded" />
+                                        <figcaption>
+                                            <a>
+                                                <small>Bitbucket</small>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div className="has-arrow arrow-10">
+                                <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
+                            </div>
+                        </div>
+                        <div className="column is-12 deployment">
+                            <h5 className="text-center text-white font-bold text-3xl mt-8 px-2 bg-darker">Deployment</h5>
+                            <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly has-margin-bottom-90">
+                                <div className="column is-full-touch is-6-desktop is-flex is-justify-content-space-around has-text-centered connection-border-horizontal">
+                                    <figure className="image">
+                                        <img alt src="assets/processImages/we-build-aws.png" className="lazyLoad isLoaded" />
+                                        <figcaption>
+                                            <a>
+                                                <small>AWS</small>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure className="image">
+                                        <img alt src="assets/processImages/we-build-google-cloud.png" className="lazyLoad isLoaded" />
+                                        <figcaption>
+                                            <a>
+                                                <small>Google Cloud</small>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure className="image">
+                                        <img alt src="assets/processImages/we-build-cloud-services.png" className="lazyLoad isLoaded" />
+                                        <figcaption>
+                                            <a>
+                                                <small>Other Cloud Services</small>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
