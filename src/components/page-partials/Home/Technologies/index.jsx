@@ -9,7 +9,9 @@ const Technologies = () => {
             <ScatteredBg left="10%" width="30%" />
             <div className="mx-auto max-w-7xl gap-16 sm:gap-y-24 grid lg:grid-cols-2 lg:items-center bscontainer">
                 <div className="z-10">
-                    <h3 className="text-primary mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight"><span className='text-white'>Expert in Multiple </span> Technologies with Over 1000+ Projects Completed!</h3>
+                    <h3 className="text-primary mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+                        <span className="text-white">Expert in Multiple </span> Technologies with Over 1000+ Projects Completed!
+                    </h3>
                     <p className="text-gray-100 text-lg">
                         Where Innovation Meets Imagination this exploration is not just about understanding the latest gadgets or software but about immersing oneself in the realm where creative
                         genius and technological prowess converge.

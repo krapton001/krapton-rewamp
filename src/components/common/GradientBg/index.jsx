@@ -45,10 +45,9 @@ export const background2 = () => (
     </>
 );
 
-
 export const backgroundHero = () => (
     <>
-    <div className="absolute inset-x-0 top-0 z-0 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
+        <div className="absolute inset-x-0 top-0 z-0 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
             <div
                 className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff8080] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
                 style={{
@@ -66,6 +65,5 @@ export const backgroundHero = () => (
                 }}
             />
         </div>
-        
     </>
 );
