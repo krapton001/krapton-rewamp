@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import connectDatabase from '../libs/databaseConn';
 import blog from '../models/blog';
 
+
 export async function POST(req) {
     try {
         const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
