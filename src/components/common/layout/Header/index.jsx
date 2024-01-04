@@ -42,7 +42,7 @@ export default function Header() {
                     </a>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gray-900 hover:text-primary">
+                            <a key={item.name} href={item.href} className="text-md font-normal leading-6 text-gray-900 hover:text-primary">
                                 {item.name}
                             </a>
                         ))}
@@ -55,7 +55,7 @@ export default function Header() {
                     </button>
                 </div>
                 <div className="hidden lg:flex">
-                    <div className="py-6">
+                    <div className="py-3">
                         <HyperLink title={'hire us'} href={'/hire-us'}>
                             Hire Us
                         </HyperLink>

@@ -15,8 +15,8 @@ const Hero = () => {
                     <h2 className="bg-gradient py-2 text-5xl lg:text-8xl font-bold ">
                         Crafting Visionary Ideas <span className="text-black block">into Digital Realities</span>
                     </h2>
-                    <p className="text-gray-600 text-lg lg:text-3xl font-light mt-8">
-                        Reliable IT Services to Power Your Business Success, Expertise in software, web app, and mobile app development that drives results.
+                    <p className="text-gray-500 text-lg lg:text-2xl font-light mt-8">
+                        Reliable IT Services to Power Your Business Success, <br/> Expertise in software, web app, and mobile app development that drives results.
                     </p>
 
                     <div className="flex gap-x-3 mt-8">
