@@ -81,18 +81,3 @@ export async function DELETE(req) {
         });
     }
 }
-
-/*
- * [Note: The uploadImage function is incomplete and requires further details like cloud storage configuration and image handling logic.]
- * Handles image upload. This function is currently not fully implemented.
- * 
- * @param {object} req - The incoming request object with the image file.
- * @returns {NextResponse} - The Next.js response object with the upload status or error message.
- */
-/*
-const uploadImage = async (req) => {
-    // Implementation needed for image upload
-};
-*/
-
-// export default uploadImage; // Uncomment and complete implementation when ready.
