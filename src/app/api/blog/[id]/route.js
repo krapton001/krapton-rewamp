@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import connectDatabase from '../../../../../libs/databaseConn';
-import blog from '../../../../../models/blog';
+import connectDatabase from '../../libs/databaseConn';
+import blog from '../../models/blog';
 
 //get a single blog by its id
 export async function GET(req, { params }) {
