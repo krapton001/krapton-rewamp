@@ -2,83 +2,97 @@ import { NextResponse } from 'next/server';
 import connectDatabase from '../libs/databaseConn';
 import blog from '../models/blog';
 
-
+/**
+ * Handles POST request to create a new blog.
+ * 
+ * @param {object} req - The incoming request object.
+ * @returns {NextResponse} - The Next.js response object with creation status or error message.
+ */
 export async function POST(req) {
     try {
         const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
-        const tagArray = tags.split(',').map((item) => item.trim());
+        const tagArray = tags.split(',').map(item => item.trim());
         let createdData = { title, description, createdBy, content, imageUrl, views, tags: tagArray };
+
         await connectDatabase();
         const data = await blog.create(createdData);
-        if (data) {
-            return NextResponse.json({
-                status: 201,
-                message: 'blog created',
-                blog: data,
-            });
-        }
+
+        return NextResponse.json({
+            status: 201,
+            message: 'Blog created',
+            blog: data,
+        });
     } catch (error) {
         return NextResponse.json({
             status: 400,
-            message: 'bad request',
-            error: error,
+            message: 'Bad request',
+            error: error.toString(),
         });
     }
 }
 
+/**
+ * Handles GET request to retrieve all blogs or blogs with a specific archival status.
+ * 
+ * @param {object} req - The incoming request object.
+ * @returns {NextResponse} - The Next.js response object with the blogs data or an error message.
+ */
 export async function GET(req) {
     try {
-        const isArchived = req.nextUrl.searchParams.get('isArchived');
+        const isArchived = req.nextUrl.searchParams.get('isArchived') === 'true';
         await connectDatabase();
         const allBlogs = await blog.find({ isArchived });
-        if (allBlogs.length) {
-            return NextResponse.json({
-                status: 200,
-                message: 'getAllBlogs',
-                data: allBlogs,
-            });
-        }
+
         return NextResponse.json({
-            status: 204,
-            message: 'No blogs found',
+            status: allBlogs.length ? 200 : 204,
+            message: allBlogs.length ? 'Blogs retrieved' : 'No blogs found',
+            data: allBlogs,
         });
     } catch (error) {
         return NextResponse.json({
             status: 400,
             message: 'Something went wrong',
+            error: error.toString(),
         });
     }
 }
 
+/**
+ * Handles DELETE request to delete a blog by ID.
+ * 
+ * @param {object} req - The incoming request object.
+ * @returns {NextResponse} - The Next.js response object with deletion status or error message.
+ */
 export async function DELETE(req) {
     try {
         const id = req.nextUrl.searchParams.get('id');
         await connectDatabase();
         await blog.findByIdAndDelete(id);
-        return NextResponse({
+
+        return NextResponse.json({
             status: 200,
-            message: 'blog deleted!',
+            message: 'Blog deleted',
         });
     } catch (error) {
         return NextResponse.json({
             status: 400,
-            message: 'bad request',
+            message: 'Bad request',
+            error: error.toString(),
         });
     }
 }
 
-//upload image
-// const uploadImage = async (req) => {
-//     const image = req.files.image;
+/*
+ * [Note: The uploadImage function is incomplete and requires further details like cloud storage configuration and image handling logic.]
+ * Handles image upload. This function is currently not fully implemented.
+ * 
+ * @param {object} req - The incoming request object with the image file.
+ * @returns {NextResponse} - The Next.js response object with the upload status or error message.
+ */
+/*
+const uploadImage = async (req) => {
+    // Implementation needed for image upload
+};
+*/
 
-//     if (!image || !image.mimetype.include('image')) {
-//         return NextResponse.json({ status: 400, message: 'invalid type' });
-//     }
-//     const cloudStorage = await new cloudStorage();
-//     const uploadImage = await cloudStorage.upload(image);
-
-//     const imageUrl = await cloudStorage.getDownloadURL(uploadImage);
-//     NextResponse.json({ status: 200, imageUrl: imageUrl });
-// };
-
-// export default uploadImage;
+// export default uploadImage; // Uncomment and complete implementation when ready.
