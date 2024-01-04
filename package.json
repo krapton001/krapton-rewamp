@@ -17,12 +17,13 @@
     "@react-three/fiber": "^8.15.12",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
+    "heroicons": "^2.1.1",
+    "highlight.js": "^11.9.0",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "three": "^0.160.0",
-    "heroicons": "^2.1.1"
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
