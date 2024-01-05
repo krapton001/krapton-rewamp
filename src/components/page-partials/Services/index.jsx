@@ -4,6 +4,7 @@ import ServiceList from './ServiceList';
 import { services } from '@/data/services';
 import OurProcess from './OurProcess';
 
+
 const ServicePage = () => {
     return (
         <main className="w-full bg-white min-h-screen">
