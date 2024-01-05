@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import hljs from 'highlight.js';
-import 'highlight.js/styles/vs2015.css'; // This is the style similar to VS Code
+// import hljs from 'highlight.js';
+// import 'highlight.js/styles/vs2015.css'; // This is the style similar to VS Code
 
 
 const CodeTypingComponent = ({ code, setCode, className, ...props }) => {
@@ -9,13 +9,13 @@ const CodeTypingComponent = ({ code, setCode, className, ...props }) => {
     const ref = useRef();
 
     const highlightColor = () => {
-        const codeElement = ref.current.querySelector('code');
-        if (codeElement) {
-            // Remove the highlighted data attribute to allow re-highlighting
-            codeElement.removeAttribute('data-highlighted');
-            hljs.highlightElement(codeElement);
-            codeElement.style.background = 'black';
-        }
+        // const codeElement = ref.current.querySelector('code');
+        // if (codeElement) {
+        //     // Remove the highlighted data attribute to allow re-highlighting
+        //     codeElement.removeAttribute('data-highlighted');
+        //     hljs.highlightElement(codeElement);
+        //     codeElement.style.background = 'black';
+        // }
     }
 
     useEffect(() => {
