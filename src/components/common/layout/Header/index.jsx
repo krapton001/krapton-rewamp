@@ -38,7 +38,7 @@ export default function Header() {
                 <div className="flex items-center gap-x-12">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Krapton</span>
-                        <LazyImg className="h-8 w-auto" src="assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
+                        <LazyImg className="h-8 w-auto" src="/assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
                     </a>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
