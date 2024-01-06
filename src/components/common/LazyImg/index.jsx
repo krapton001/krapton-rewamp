@@ -16,7 +16,7 @@ const ImageError = ({ message }) => {
     return <div style={styles}>{message}</div>;
 };
 
-const LazyImg = ({ src, alt = APP_TITLE, placeholder, title = APP_TITLE, ...props }) => {
+const LazyImg = ({ src = '/assets/custom_icons/logo-full.webp', alt = APP_TITLE, placeholder, title = APP_TITLE, ...props }) => {
     const [imageSrc, setImageSrc] = useState(placeholder || src);
     const [imageRef, setImageRef] = useState();
 
@@ -25,7 +25,7 @@ const LazyImg = ({ src, alt = APP_TITLE, placeholder, title = APP_TITLE, ...prop
     };
 
     const handleError = (e) => {
-        e.src = '/assets/custom_icons/logo-full.webp'
+        e.target.src = '/assets/custom_icons/logo-full.webp';
     }
 
     useEffect(() => {
