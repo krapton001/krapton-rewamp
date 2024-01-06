@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import connectDatabase from '../libs/databaseConn';
 import blog from '../models/blog';
+import Cors from 'cors';
 
 /**
  * Handles POST request to create a new blog.
