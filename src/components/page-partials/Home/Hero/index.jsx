@@ -12,7 +12,7 @@ const Hero = () => {
                     {/* <div className="relative flex items-center  gap-x-2 w-fit  text-center rounded-full mb-6 px-4 py-1 text-sm leading-6  ring-1 ring-gray-500">
                         <p className="flex text-xl font-normal  bg-clip-text text-gray-950 items-center gap-x-1">Transforming Creative Visions</p>
                     </div> */}
-                    <h2 className="bg-gradient py-2 text-5xl lg:text-8xl font-bold ">
+                    <h2 className="text-primary py-2 text-5xl lg:text-8xl font-bold ">
                         Crafting Visionary Ideas <span className="text-black block">into Digital Realities</span>
                     </h2>
                     <p className="text-gray-500 text-lg lg:text-2xl font-light mt-8">
