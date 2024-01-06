@@ -1,7 +1,8 @@
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/common/layout/Header';
 import Footer from '@/components/common/layout/Footer';
+import { Analytics } from '@vercel/analytics/react';
+ 
 
 export const metadata = {
     title: 'Create Next App',
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
                 {children}
                 <Footer />
             </body>
+            <Analytics mode={'production'} />;
         </html>
     );
 }

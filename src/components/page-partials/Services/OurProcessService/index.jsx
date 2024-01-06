@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { android, apiWeb, appHybrid, backendWeb, database, desktop, frontendWeb, testing, devops, Deployment } from './constant';
 import ProcessList from './ProcessList';
 
-const OurProcess = () => {
+export const OurProcessService = () => {
     return (
         <section className="bg-darker w-full">
             <div className="max-w-7xl mx-auto px-4 xl:px-0">
@@ -267,5 +267,3 @@ const OurProcess = () => {
         </section>
     );
 };
-
-export default OurProcess;
