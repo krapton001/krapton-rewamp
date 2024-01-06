@@ -1,10 +1,12 @@
-import { HOST, randomNumber } from '@/constants';
+import { HOST } from '@/constants';
 import { webPageSchema } from '@/seo-utils/webPageSchema';
 import { organizationSchema } from '@/seo-utils/organizationSchema';
 import { siteNavigationElement } from '@/seo-utils/siteNavigationElement';
 import { breadCrumbSchema } from '@/seo-utils/breadCrumbSchema';
 import { createMetaData } from '@/seo-utils/CommonMeta';
-import BlogPage from '@/components/page-partials/Blog';
+import BlogDetail from '@/components/page-partials/BlogDetail';
+import { notFound } from 'next/navigation';
+
 
 const url = `${HOST}/blog`;
 const title = `Krapton - Let's build something amazing together`;
@@ -15,13 +17,14 @@ export const metadata = {
     ...createMetaData({ title, description, keywords, url }),
 };
 
-export default async function () {
-    const res = await fetch(`https://krapton.com/api/blog?limit=9&random=${randomNumber}`);
-    const {
-        data,
-        pagination = { },
-    } = await res.json();
-    console.log(data[0], ' @@@ data')
+export default async function (props) {
+    const { params = { id: '' } } = props;
+    const res = await fetch(`https://krapton.com/api/blog/${params.id}`);
+    const { data } =  res ? await res.json() : null;
+
+    if(!data) {
+        notFound();
+    }
 
     return (
         <>
@@ -29,7 +32,7 @@ export default async function () {
             <script type="application/ld+json" dangerouslySetInnerHTML={organizationSchema()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={siteNavigationElement()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={breadCrumbSchema()} />
-            <BlogPage blogs={data} pagination={pagination} />
+            <BlogDetail blog={data} />
         </>
     );
 }

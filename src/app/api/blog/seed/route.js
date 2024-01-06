@@ -258,7 +258,7 @@ export async function POST(req) {
             const b = blogsData[key];
             blogArr.push({
                 title: b.name,
-                description: b.descripiton,
+                description: b.description,
                 createdBy: 'Suboor Khan',
                 content: b.content,
                 imageUrl: b.imageUrl,
