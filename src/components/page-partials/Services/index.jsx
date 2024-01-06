@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './Hero';
 import ServiceList from './ServiceList';
 import { services } from '@/data/services';
-import OurProcess from './OurProcess';
+import OurProcess from '@/components/page-partials/Services/OurProcess';
 
 
 
