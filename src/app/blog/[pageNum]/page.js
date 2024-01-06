@@ -20,11 +20,7 @@ export default async function (props) {
     const res = await fetch(`https://krapton.com/api/blog?limit=9&page=${params.pageNum}`);
     const {
         data,
-        pagination = {
-            currentPage: 1,
-            totalPages: 2,
-            limit: 10,
-        },
+        pagination = { },
     } = await res.json();
 
     return (

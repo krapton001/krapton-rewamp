@@ -4,11 +4,7 @@ import Pagination from './Pagination';
 
 const BlogPage = ({
     blogs = [],
-    pagination = {
-        currentPage: 1,
-        totalPages: 2,
-        limit: 10,
-    },
+    pagination = { },
 }) => {
     const renderBlogs = () => {
         return blogs.map((blog, idx) => {
