@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import connectDatabase from '../libs/databaseConn';
 import blog from '../models/blog';
-import Cors from 'cors';
+
 
 /**
  * Handles POST request to create a new blog.
@@ -9,30 +9,7 @@ import Cors from 'cors';
  * @param {object} req - The incoming request object.
  * @returns {NextResponse} - The Next.js response object with creation status or error message.
  */
-
-const cors = Cors({
-    methods: ['POST', 'GET', 'HEAD'],
-    origin: '*', // Reflect the request origin, or set to your own specific origins
-});
-
-function runMiddleware(req, res, fn) {
-    return new Promise((resolve, reject) => {
-        fn(req, res, (result) => {
-            if (result instanceof Error) {
-                return reject(result);
-            }
-            return resolve(result);
-        });
-    });
-}
-export async function POST(req,res) {
-
-    await runMiddleware(req, res, cors);
-    if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
-
-
+export async function POST(req) {
     try {
         const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
         const tagArray = tags.split(',').map((item) => item.trim());
@@ -41,13 +18,13 @@ export async function POST(req,res) {
         await connectDatabase();
         const data = await blog.create(createdData);
 
-        return res.json({
+        return NextResponse.json({
             status: 201,
             message: 'Blog created',
             blog: data,
         });
     } catch (error) {
-        return res.json({
+        return NextResponse.json({
             status: 400,
             message: 'Bad request',
             error: error.toString(),
@@ -62,12 +39,6 @@ export async function POST(req,res) {
  * @returns {NextResponse} - The Next.js response object with the blogs data or an error message.
  */
 export async function GET(req) {
-    
-    await runMiddleware(req, NextResponse, cors);
-    if (req.method !== 'POST') {
-        return NextResponse.status(405).json({ error: 'Method not allowed' });
-    }
-
     try {
         const isArchived = req.nextUrl.searchParams.get('isArchived') === 'true';
 
