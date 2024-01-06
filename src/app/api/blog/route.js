@@ -9,7 +9,30 @@ import Cors from 'cors';
  * @param {object} req - The incoming request object.
  * @returns {NextResponse} - The Next.js response object with creation status or error message.
  */
-export async function POST(req) {
+
+const cors = Cors({
+    methods: ['POST', 'GET', 'HEAD'],
+    origin: '*', // Reflect the request origin, or set to your own specific origins
+});
+
+function runMiddleware(req, res, fn) {
+    return new Promise((resolve, reject) => {
+        fn(req, res, (result) => {
+            if (result instanceof Error) {
+                return reject(result);
+            }
+            return resolve(result);
+        });
+    });
+}
+export async function POST(req,res) {
+
+    await runMiddleware(req, res, cors);
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method not allowed' });
+    }
+
+
     try {
         const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
         const tagArray = tags.split(',').map((item) => item.trim());
@@ -18,13 +41,13 @@ export async function POST(req) {
         await connectDatabase();
         const data = await blog.create(createdData);
 
-        return NextResponse.json({
+        return res.json({
             status: 201,
             message: 'Blog created',
             blog: data,
         });
     } catch (error) {
-        return NextResponse.json({
+        return res.json({
             status: 400,
             message: 'Bad request',
             error: error.toString(),
