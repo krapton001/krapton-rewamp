@@ -2,7 +2,7 @@ import LazyImg from '@/components/common/LazyImg';
 import React from 'react';
 
 const BlogCard = ({ blog }) => {
-    const { title, description, createdBy, content, imageUrl, tags, views } = blog;
+    const { title, description, createdBy, content, imageUrl, tags, views, _id } = blog;
 
     return (
         <article className="flex flex-col items-start justify-between">
@@ -20,13 +20,13 @@ const BlogCard = ({ blog }) => {
                     <time dateTime="2020-03-16" className="text-gray-500">
                         Mar 16, 2020
                     </time>
-                    <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                    <a href={`/blog/detail/${_id}`} className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
                         Marketing
                     </a>
                 </div>
                 <div className="group relative">
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                        <a href="#">
+                        <a href={`/blog/detail/${_id}`}>
                             <span className="absolute inset-0" />
                             {title}
                         </a>
@@ -43,10 +43,10 @@ const BlogCard = ({ blog }) => {
                     />
                     <div className="text-sm leading-6">
                         <p className="font-semibold text-gray-900">
-                            <a href="#">
+                            <span>
                                 <span className="absolute inset-0" />
                                 Michael Foster
-                            </a>
+                            </span>
                         </p>
                         <p className="text-gray-600">Co-Founder / CTO</p>
                     </div>
