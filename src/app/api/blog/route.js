@@ -49,7 +49,7 @@ export async function GET(req) {
         await connectDatabase();
 
         // Find blogs with pagination
-        const allBlogs = await blog.find({ isArchived }).skip(skip).limit(limit);
+        const allBlogs = await blog.find({  }).skip(skip).limit(limit);
 
         // Get total number of blogs to calculate total pages
         const totalBlogs = await blog.countDocuments({ isArchived });
