@@ -11,7 +11,7 @@ import blog from '../models/blog';
  */
 export async function POST(req) {
     try {
-        const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
+        const { title, description, createdBy, content, imageUrl, tags, views = 0 } = await req.json();
         const tagArray = tags.split(',').map((item) => item.trim());
         let createdData = { title, description, createdBy, content, imageUrl, views, tags: tagArray };
 
