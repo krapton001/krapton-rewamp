@@ -17,11 +17,11 @@ const BlogPage = ({
     };
 
     return (
-        <div className="bg-white py-24 sm:py-32 relative">
+        <div className="bg-white py-4 sm:py-32 relative">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-                    <p className="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
+            <div className="mx-auto max-w-5xl text-center">
+                    <h2 className="text-lg font-semibold leading-8 tracking-tight text-primaryDark">Latest Update</h2>
+                    <p className="mt-2 text-3xl  md:text-5xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Discover a World of Innovation: Our Blogs Bring Cutting-Edge Technology to Life, Just for You!</p>
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">{renderBlogs()}</div>
                 <Pagination pagination={pagination} />

@@ -21,7 +21,6 @@ export default async function () {
         data,
         pagination = { },
     } = await res.json();
-    console.log(data[0], ' @@@ data')
 
     return (
         <>
