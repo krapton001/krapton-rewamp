@@ -10,7 +10,7 @@ const HomeServices = () => {
             <div className="max-w-7xl mx-auto relative z-20">
                 <div className="text-center px-5 lg:px-16">
                     <h2 className="text-gray-900 mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-                        Elevate Your Experience <span className="bg-gradient block">with Our World-Class Premium Services</span>
+                        Elevate Your Experience <span className="text-primary block">with Our World-Class Premium Services</span>
                     </h2>
                     <p className="text-gray-600 text-lg">
                         Elevate your business to unprecedented heights with our commitment to Excellence in Service, where unmatched quality and reliability aren't just promises, but the foundation of

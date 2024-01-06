@@ -262,7 +262,7 @@ export async function POST(req) {
                 createdBy: 'Suboor Khan',
                 content: b.content,
                 imageUrl: b.imageUrl,
-                tags: 'Coding, Programming, Javscript',
+                tags: ['Coding', 'Programming', 'Javscript'],
                 views: b.views === 0 ? 98 : b.views,
             });
         });
