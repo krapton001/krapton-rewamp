@@ -3,7 +3,7 @@ import LazyImg from '@/components/common/LazyImg';
 import React from 'react';
 
 const BlogCard = ({ blog }) => {
-    const { title, description, createdBy, content, imageUrl, tags = [], views, _id } = blog;
+    const { title, description, createdBy, imageUrl = '/assets/custom_icons/logo-full.webp', tags = [], views, _id } = blog;
     const url = `/blog/detail/${_id}`;
     const renderTags = tags.slice(0, 3).map((tag, idx) => (
         <a key={`tag-${idx}`}  className="relative border z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
