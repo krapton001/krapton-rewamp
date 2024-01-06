@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { writeFile } from 'fs/promises';
 import path from 'path';
-
+import crypto from 'crypto';
 const fs = require('fs');
-const dir = './public/assets/upload/';
 
 /**
  * upload image API that stores images in public folder
@@ -33,8 +32,12 @@ export async function POST(req) {
         // Extract the file extension from the original file name
         const extension = path.extname(file.name);
 
-        // Generate a new file name to avoid naming conflicts
-        const fileName = `${Date.now()}_${file.name.split(' ')[0]}${extension}`;
+        // Generate a unique file name using a hash
+        const hash = crypto.createHash('sha256');
+        hash.update(`${Date.now()}_${file.name}`);
+        const uniqueName = hash.digest('hex').substring(0, 16);
+
+        const fileName = `${uniqueName}${extension}`;
 
         // Define the directory and file path for saving the file
         const dir = './public/assets/upload/';
