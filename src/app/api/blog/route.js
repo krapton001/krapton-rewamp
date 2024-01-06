@@ -4,14 +4,14 @@ import blog from '../models/blog';
 
 /**
  * Handles POST request to create a new blog.
- * 
+ *
  * @param {object} req - The incoming request object.
  * @returns {NextResponse} - The Next.js response object with creation status or error message.
  */
 export async function POST(req) {
     try {
         const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
-        const tagArray = tags.split(',').map(item => item.trim());
+        const tagArray = tags.split(',').map((item) => item.trim());
         let createdData = { title, description, createdBy, content, imageUrl, views, tags: tagArray };
 
         await connectDatabase();
@@ -33,20 +33,37 @@ export async function POST(req) {
 
 /**
  * Handles GET request to retrieve all blogs or blogs with a specific archival status.
- * 
+ *
  * @param {object} req - The incoming request object.
  * @returns {NextResponse} - The Next.js response object with the blogs data or an error message.
  */
 export async function GET(req) {
     try {
         const isArchived = req.nextUrl.searchParams.get('isArchived') === 'true';
+
+        // Pagination parameters
+        const page = parseInt(req.nextUrl.searchParams.get('page')) || 1;
+        const limit = parseInt(req.nextUrl.searchParams.get('limit')) || 10;
+        const skip = (page - 1) * limit;
+
         await connectDatabase();
-        const allBlogs = await blog.find({ isArchived });
+
+        // Find blogs with pagination
+        const allBlogs = await blog.find({ isArchived }).skip(skip).limit(limit);
+
+        // Get total number of blogs to calculate total pages
+        const totalBlogs = await blog.countDocuments({ isArchived });
+        const totalPages = Math.ceil(totalBlogs / limit);
 
         return NextResponse.json({
             status: allBlogs.length ? 200 : 204,
             message: allBlogs.length ? 'Blogs retrieved' : 'No blogs found',
             data: allBlogs,
+            pagination: {
+                currentPage: page,
+                totalPages,
+                limit,
+            },
         });
     } catch (error) {
         return NextResponse.json({
@@ -59,7 +76,7 @@ export async function GET(req) {
 
 /**
  * Handles DELETE request to delete a blog by ID.
- * 
+ *
  * @param {object} req - The incoming request object.
  * @returns {NextResponse} - The Next.js response object with deletion status or error message.
  */
