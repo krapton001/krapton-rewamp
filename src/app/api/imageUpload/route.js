@@ -41,12 +41,17 @@ export async function POST(req) {
 
         // Define the directory and file path for saving the file
         const dir = './public/assets/upload/';
-        const filePath = path.join(dir, fileName);
+
+        // Use an absolute path for the directory
+        const uploadDir = path.join(__dirname, 'public', 'assets', 'upload');
 
         // Ensure the upload directory exists, create it if not
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
+        if (!fs.existsSync(uploadDir)) {
+            fs.mkdirSync(uploadDir, { recursive: true });
         }
+
+        // Define the file path for saving the file
+        const filePath = path.join(uploadDir, fileName);
 
         // Write the file to the filesystem
         await writeFile(filePath, buffer);
