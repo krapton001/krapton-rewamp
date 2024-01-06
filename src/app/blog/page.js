@@ -17,7 +17,14 @@ export const metadata = {
 
 export default async function () {
     const res = await fetch('https://krapton.com/api/blog?limit=9');
-    const { data } = await res.json();
+    const {
+        data,
+        pagination = {
+            currentPage: 1,
+            totalPages: 2,
+            limit: 10,
+        },
+    } = await res.json();
 
     return (
         <>
@@ -25,7 +32,7 @@ export default async function () {
             <script type="application/ld+json" dangerouslySetInnerHTML={organizationSchema()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={siteNavigationElement()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={breadCrumbSchema()} />
-            <BlogPage blogs={data} />
+            <BlogPage blogs={data} pagination={pagination} />
         </>
     );
 }

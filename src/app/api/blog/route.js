@@ -53,7 +53,7 @@ export async function GET(req) {
         const allBlogs = await blog.find({  }).skip(skip).limit(limit);
 
         // Get total number of blogs to calculate total pages
-        const totalBlogs = await blog.countDocuments({ isArchived });
+        const totalBlogs = await blog.countDocuments({  });
         const totalPages = Math.ceil(totalBlogs / limit);
 
         return NextResponse.json({
@@ -64,6 +64,7 @@ export async function GET(req) {
                 currentPage: page,
                 totalPages,
                 limit,
+                totalBlogs
             },
         });
     } catch (error) {
