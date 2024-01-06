@@ -17,7 +17,7 @@ const HomeServices = () => {
                         everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations, but exceeding them at every turn.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 px-5 gap-8 xl:grid-cols-4 mt-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 px-5 gap-8 xl:grid-cols-3 mt-16">
                     {services.slice(0, 8).map((service, idx) => (
                         <Fragment key={`service-${idx}`}>
                             <ServiceCard service={service} />

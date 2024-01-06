@@ -9,7 +9,7 @@ const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'Products', href: '/products' },
-    { name: 'Blogs', href: '/blogs' },
+    { name: 'Blogs', href: '/blog' },
     { name: 'Careers', href: '/careers' },
 ];
 
@@ -34,15 +34,15 @@ export default function Header() {
 
     return (
         <header className={` ${isScrolled ? ' backdrop-blur-sm bg-white/70' : 'bg-transparent'}  sticky top-0 z-[999]`}>
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:py-1 xl:px-0" aria-label="Global">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:py-1 xl:px-0" aria-label="Global">
                 <div className="flex items-center gap-x-12">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Krapton</span>
-                        <LazyImg className="h-8 w-auto" src="assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
+                        <LazyImg className="h-8 w-auto" src="/assets/custom_icons/krapton-logo.webp" alt="krapton_icon" title="krapton_icon" />
                     </a>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gray-900 hover:text-primary">
+                            <a key={item.name} href={item.href} className="text-md font-normal leading-6 text-gray-900 hover:text-primary">
                                 {item.name}
                             </a>
                         ))}
@@ -55,7 +55,7 @@ export default function Header() {
                     </button>
                 </div>
                 <div className="hidden lg:flex">
-                    <div className="py-6">
+                    <div className="py-3">
                         <HyperLink title={'hire us'} href={'/hire-us'}>
                             Hire Us
                         </HyperLink>
@@ -78,7 +78,7 @@ export default function Header() {
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
                                 {navigation.map((item) => (
-                                    <a key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                    <a key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-md font-normal leading-7 text-gray-900 hover:bg-gray-50">
                                         {item.name}
                                     </a>
                                 ))}

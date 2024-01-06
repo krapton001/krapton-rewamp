@@ -15,8 +15,9 @@ export const metadata = {
     ...createMetaData({ title, description, keywords, url }),
 };
 
-export default async function () {
-    const res = await fetch('https://krapton.com/api/blog?limit=9');
+export default async function (props) {
+    const { params = { pageNum: '2' } } = props;
+    const res = await fetch(`https://krapton.com/api/blog?limit=9&page=${params.pageNum}`);
     const {
         data,
         pagination = { },

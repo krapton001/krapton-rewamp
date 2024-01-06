@@ -39,10 +39,7 @@ const LazyImg = ({ src, alt = APP_TITLE, placeholder, title = APP_TITLE, ...prop
                             }
                         });
                     },
-                    {
-                        threshold: 0.01,
-                        rootMargin: '75%',
-                    }
+                    { rootMargin: '100px' }
                 );
                 observer.observe(imageRef);
             } else {
@@ -66,7 +63,7 @@ const LazyImg = ({ src, alt = APP_TITLE, placeholder, title = APP_TITLE, ...prop
         return <ImageError message="title attribute must contain string value on LazyImg component." />;
     }
 
-    return <img ref={setImageRef} src={imageSrc} onLoad={onLoad} alt={alt} {...props} />;
+    return <img ref={setImageRef} loading="lazy" src={imageSrc} onLoad={onLoad} alt={alt} {...props} />;
 };
 
 export default LazyImg;

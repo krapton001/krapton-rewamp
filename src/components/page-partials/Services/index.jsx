@@ -2,14 +2,15 @@ import React from 'react';
 import Hero from './Hero';
 import ServiceList from './ServiceList';
 import { services } from '@/data/services';
-import OurProcess from './OurProcess';
+// import OurProcess from './OurProcess';
+
 
 const ServicePage = () => {
     return (
         <main className="w-full bg-white min-h-screen">
             <Hero />
             <ServiceList services={services.slice(0, 6)} />
-            <OurProcess />
+            {/* <OurProcess /> */}
             <ServiceList services={services.slice(6, 12)} />
             {/* Code auto typing website builder + experimental THREE JS */}
             {/* CTA */}
