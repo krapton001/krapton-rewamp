@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { android, apiWeb, appHybrid, backendWeb, database, desktop, frontendWeb } from './constant';
+import { android, apiWeb, appHybrid, backendWeb, database, desktop, frontendWeb, testing, devops, Deployment } from './constant';
 import ProcessList from './ProcessList';
 
 const OurProcess = () => {
@@ -7,7 +7,7 @@ const OurProcess = () => {
         <section className="bg-darker w-full">
             <div className="max-w-7xl mx-auto px-4 xl:px-0">
                 <div className="py-10 text-center">
-                    <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+                    <h2 className="text-white text-xl xl:text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
                         Agile Software
                         <span className="text-primary"> Development</span>
                     </h2>
@@ -15,14 +15,14 @@ const OurProcess = () => {
                 </div>
                 <div className="flex flex-col xl:flex-row justify-between py-5 flex-wrap">
                     <div className="relative w-full xl:w-1/2 flex-none block px-0 lg:px-5 xl:px-10">
-                        <h5 className="text-center -mt-2 text-white font-bold text-3xl mb-10">Web / Desktop</h5>
-                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tr-none rounded-br-none border-r-0 h-[190px] w-[170px] top-[10px] left-[30px] absolute">
-                            <div className="top-[80px] absolute -left-[15px]">
+                        <h5 className="text-center -mt-2 text-white font-bold text-xl sm:text-2xl xl:text-3xl mb-10">Web / Desktop</h5>
+                        <div className="border-2 md:border-4 border-dashed border-primary rounded-[30px] rounded-tr-none rounded-br-none border-r-0 md:border-r-0 h-[130px] w-[80px] xl:h-[190px] xl:w-[170px] top-[10px] left-[30px] absolute">
+                            <div className="top-[50px] absolute -left-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500" />
                             </div>
                         </div>
-                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-bl-none border-l-0 h-[335px] w-[150px] right-[60px] top-[190px] absolute">
-                            <div className="top-[140px] absolute -right-[15px]">
+                        <div className="border-2 md:border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-bl-none border-l-0 md:border-l-0  h-[180px] w-[110px] xl:h-[335px] xl:w-[150px] right-5 xl:right-[60px] top-[150px] xl:top-[190px] absolute">
+                            <div className="top-[80px] xl:top-[140px] absolute -right-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="" />
                             </div>
                         </div>
@@ -30,10 +30,10 @@ const OurProcess = () => {
                         <figure className="flex justify-center">
                             <img alt src="assets/processImages/we-build-web.png" className="w-full h-auto z-10 relative" />
                         </figure>
-                        <h6 className="text-center text-white font-bold text-3xl mt-44 px-2 bg-darker">Tech Stack</h6>
-                        <div className="flex justify-evenly mt-10">
+                        <h6 className="text-center text-white font-bold text-xl sm:text-2xl xl:text-3xl mt-20 xl:mt-44 px-2 bg-darker">Tech Stack</h6>
+                        <div className="flex justify-around mt-10">
                             <div className="flex-none w-[45%] xl:w-[40%]">
-                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">APPS</h6>
+                                <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">APPS</h6>
                                 <div className="relative">
                                     <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                         <ul className="p-0 bg-transparent">
@@ -46,9 +46,9 @@ const OurProcess = () => {
                                             })}
                                         </ul>
                                     </div>
-                                    <p className="has-text-vertical">BACKEND</p>
+                                    <p className="text-primary font-bold -rotate-90 absolute top-[40%] -left-[49px]">BACKEND</p>
                                 </div>
-                                <div className="relative">
+                                <div className="relative mt-5">
                                     <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                         <ul className="p-0 bg-transparent">
                                             {frontendWeb.map((li) => {
@@ -60,10 +60,9 @@ const OurProcess = () => {
                                             })}
                                         </ul>
                                     </div>
-
-                                    <p className="has-text-vertical">FRONTEND</p>
+                                    <p className="text-primary font-bold -rotate-90 absolute top-[40%] -left-[52px]">FRONTEND</p>
                                 </div>
-                                <div className="relative">
+                                <div className="relative z-[2] mt-5">
                                     <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                         <ul className="p-0 bg-transparent">
                                             {database.map((li) => {
@@ -76,11 +75,11 @@ const OurProcess = () => {
                                         </ul>
                                     </div>
 
-                                    <p className="has-text-vertical">DATABASE</p>
+                                    <p className="text-primary font-bold -rotate-90 absolute top-[40%] -left-[49px]">DATABASE</p>
                                 </div>
                             </div>
                             <div className="flex-none w-[45%] xl:w-[40%]">
-                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">API</h6>
+                                <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">API</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
                                         {apiWeb.map((li) => {
@@ -93,7 +92,7 @@ const OurProcess = () => {
                                     </ul>
                                 </div>
                                 <div className="relative mt-10">
-                                    <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Desktop</h6>
+                                    <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">Desktop</h6>
                                     <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                         <ul className="p-0 bg-transparent">
                                             {desktop.map((li) => {
@@ -108,47 +107,38 @@ const OurProcess = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="has-dashed-border border-7 is-hidden-touch">
-                            <div className="has-arrow arrow-7">
-                                <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
-                            </div>
-                            <div className="has-arrow arrow-8">
-                                <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
-                            </div>
-                        </div>
                     </div>
                     <div className="relative w-full xl:w-1/2 flex-none block px-10">
-                        <h5 className="text-center -mt-2 text-white font-bold text-3xl mb-10">Mobile</h5>
-                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-bl-none border-l-0 h-[190px] w-[160px] top-[10px] right-[80px] absolute">
+                        <h5 className="text-center mt-5 xl:-mt-2 text-white font-bold text-xl sm:text-2xl xl:text-3xl mb-10">Mobile</h5>
+                        <div className="border-2 md:border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-bl-none border-l-0 md:border-l-0 h-[160px] xl:h-[190px]  w-[120px]  xl:w-[160px] top-[35px] xl:top-[10px] right-[30px] xl:right-[80px] absolute">
                             <div className="left-[60px] absolute -bottom-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 rotate-90" />
                             </div>
                         </div>
-                        <div className="border-4 border-dashed border-primary rounded-[25px] rounded-tl-none rounded-bl-none border-l-0 h-[140px] w-[160px] top-[380px] right-[80px] absolute">
+                        <div className="border-2 md:border-4 border-dashed border-primary rounded-[25px] rounded-tl-none rounded-bl-none border-l-0 md:border-l-0 h-[120px] w-[100px] xl:w-[160px] top-[300px] xl:top-[380px] right-[30px] xl:right-[80px] absolute">
                             <div className="top-[50px] absolute -right-[15px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500" />
                             </div>
                         </div>
-                        <div className="border-4 border-dashed border-primary rounded-[30px] rounded-tr-none rounded-br-none rounded-bl-none border-r-0 border-b-0 h-[150px] w-[160px] top-[320px] left-[80px] absolute">
-                            <div className="-top-[15px] absolute left-[60px]">
+                        <div className="border-2 md:border-4 border-dashed border-primary rounded-[30px] rounded-tr-none rounded-br-none rounded-bl-none border-r-0 md:border-r-0 border-b-0 md:border-b-0 h-[100px] xl:h-[150px] w-[100px] xl:w-[160px] top-[220px] xl:top-[320px] left-[45px] xl:left-[80px] absolute">
+                            <div className="-top-[15px] absolute left-[20px] xl:left-[60px]">
                                 <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 rotate-90" />
                             </div>
                         </div>
-                        <div className="absolute top-[400px] left-10">
+                        <div className="absolute top-[270px] left-0 xl:top-[400px] xl:left-10">
                             <img alt src="assets/processImages/we-build-mobile-dart.png" className="h-[96px] w-[96px] object-contain" />
                         </div>
-                        <div className="absolute right-8">
-                            <img alt src="assets/processImages/we-build-mobile-swift.png" className="h-[96px] w-[96px] object-contain" />
+                        <div className="absolute right-0 xl:right-8 top-20 xl:top-auto">
+                            <img alt src="assets/processImages/we-build-mobile-swift.png" className=" h-[80px] w-[80px] xl:h-[96px] xl:w-[96px] object-contain" />
                         </div>
 
                         <figure className="flex justify-center">
-                            <img src="assets/processImages/we-build-mobile.png" className=" w-[250px] h-[400px] object-contain z-10 relative" />
+                            <img src="assets/processImages/we-build-mobile.png" className="h-[285px] xl:w-[250px] xl:h-[400px] object-contain z-10 relative" />
                         </figure>
-                        <h6 className="text-center text-white font-bold text-3xl mt-8 px-2 bg-darker">Tech Stack</h6>
-                        <div className="flex justify-evenly flex-wrap mt-10">
-                            <div className="has-dashed-border border-6" />
+                        <h6 className="text-center text-white font-bold text-xl sm:text-2xl xl:text-3xl mt-8 px-2 bg-darker">Tech Stack</h6>
+                        <div className="flex justify-around flex-wrap mt-10 h-[652px] xl:h-[980px] relative">
                             <div className="flex-none w-[45%] xl:w-[40%]">
-                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">iOS</h6>
+                                <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">iOS</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
                                         <ProcessList
@@ -160,8 +150,8 @@ const OurProcess = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="flex-none w-[45%] xl:w-[40%]">
-                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">ANDROID</h6>
+                            <div className="flex-none w-[45%] xl:w-[40%] z-[2]">
+                                <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">ANDROID</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
                                         {android.map((li) => {
@@ -174,8 +164,10 @@ const OurProcess = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="flex-none w-[45%] xl:w-[40%]">
-                                <h6 className="mb-5 text-center text-gray-200 text-xl font-bold">Hybrid Apps Tech Stack</h6>
+                            <div className="border-2 md:border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-tr-none border-t-0 md:border-t-0 h-28 xl:h-80 w-[150px] xl:w-[290px] top-[120px] xl:left-[25%] absolute"></div>
+                            <div className="border-l-2 md:border-l-4 border-dashed border-primary h-[70px] xl:h-[220px] left-[50%] top-[230px] xl:top-[440px] absolute"></div>
+                            <div className="flex-none w-[55%] xl:w-[40%] self-end mb-20 z-[2]">
+                                <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">Hybrid Apps Tech Stack</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
                                         {appHybrid.map((li) => {
@@ -190,132 +182,82 @@ const OurProcess = () => {
                             </div>
                         </div>
                     </div>
-                    <div id="scroll-div" className="column is-12 is-relative automation-testing connection-border">
-                        <div className="columns is-align-items-center is-centered">
-                            <div className="column is-10 is-relative has-tooltip-right">
-                                <div className="card">
+                    <div id="scroll-div" className="relative flex w-full mt-10 h-[600px]">
+                        <div className="hidden xl:flex border-2 md:border-4 border-dashed border-primary rounded-[30px] rounded-tl-none rounded-tr-none border-t-0 md:border-t-0 h-60 w-full xl:w-[770px] left-[15%] -top-40  absolute">
+                            <div className="-left-[16px] absolute top-[140px]">
+                                <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 " />
+                            </div>
+                            <div className="-right-[16px] absolute top-[140px]">
+                                <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 " />
+                            </div>
+                        </div>
+                        <div className="flex flex-col xl:flex-row relative w-full justify-center h-[440px]">
+                            <div className="flex order-3 self-center z-10 relative px-20 w-full lg:w-1/2">
+                                <div className="list-border-rounded border border-[#98b7fa96] shadow-sm mx-auto xl:mx-0 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl w-full xl:w-[250px]">
                                     <ul className="p-0 bg-transparent">
-                                        <li>
-                                            <a href="/technologies/frameworks/webdriverio-testing-services">
-                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-webdriver.png" /> <span>WebDriverIO</span>
-                                            </a>
-                                            <div className="tooltip-content">
-                                                <div className="card">
-                                                    <div className="card-content">
-                                                        <p>Next-gen browser and mobile automation test framework for Node.js</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-nightwatch.png" /> <span>NightWatch.js</span>
-                                            </div>
-                                            <div className="tooltip-content">
-                                                <div className="card">
-                                                    <div className="card-content">
-                                                        <p>End-to-end automated software testing.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="flex text-base lg:text-lg xl:text-xl font-semibold justify-center text-center">
-                                                <img alt className="mr-5 w-[30px] h-[30px] object-contain" src="assets/processImages/icon-laraveldusk.png" /> <span>Laravel Dusk</span>
-                                            </div>
-                                            <div className="tooltip-content">
-                                                <div className="card">
-                                                    <div className="card-content">
-                                                        <p>Laravel Dusk provides simple end-to-end testing and browser automation.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        {testing.map((li) => {
+                                            return (
+                                                <Fragment key={li.spanText}>
+                                                    <ProcessList spanText={li.spanText} imgAlt={li.imgAlt} imgSrc={li.imgSrc} cardContent={li.cardContent} />
+                                                </Fragment>
+                                            );
+                                        })}
                                     </ul>
                                 </div>
-
-                                <figure className="image">
-                                    <img alt src="assets/processImages/we-build-automation-testing.png" className="lazyLoad isLoaded" />
-                                </figure>
-                                <h5 className="title is-4 has-opacity-100">
+                            </div>
+                            <div className="text-center w-full xl:w-1/2">
+                                <h5 className="text-white font-bold text-xl sm:text-2xl xl:text-3xl xl:mt-8 px-2 xl:w-[180px] bg-darker">
                                     Automation <br /> Testing
                                 </h5>
                             </div>
+
+                            <figure className="xl:absolute w-full h-full mt-5 xl:mt-0">
+                                <img alt src="assets/processImages/we-build-automation-testing.png" className="w-full  object-contain" />
+                            </figure>
                         </div>
-                        <div className="has-arrow arrow-9">
-                            <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
+                        <div className="border-l-2 xl:border-l-4 border-dashed border-primary h-[120px] left-[50%] bottom-0 xl:-bottom-20 absolute">
+                            <div className="-left-[16px] absolute top-[40px] h-24 w-24">
+                                <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 " />
+                            </div>
                         </div>
                     </div>
-                    <div className="column is-12">
-                        <div className="collapse">
-                            <div className="collapse-trigger" />
-                            <div id="contentIdForA11y2" className="collapse-content">
-                                <div className="columns is-multiline is-mobile">
-                                    <div className="column is-12 devops connection-border has-margin-bottom-25">
-                                        <h5 className="has-text-centered has-margin-bottom-30 title is-4">DevOps</h5>
-                                        <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly">
-                                            <div className="column is-full-touch is-6-desktop is-flex is-justify-content-space-around has-text-centered connection-border-horizontal">
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-github.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>GitHub</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-gitlab.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>GitLab</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-bit-bucket.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>Bitbucket</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="has-arrow arrow-10">
-                                            <img alt src="assets/processImages/icon-arrow-down.png" className="lazyLoad isLoaded" />
-                                        </div>
-                                    </div>
-                                    <div className="column is-12 deployment">
-                                        <h5 className="has-text-centered has-margin-bottom-30 title is-4">Deployment</h5>
-                                        <div className="columns is-centered is-multiline is-mobile is-justify-content-space-evenly has-margin-bottom-90">
-                                            <div className="column is-full-touch is-6-desktop is-flex is-justify-content-space-around has-text-centered connection-border-horizontal">
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-aws.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>AWS</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-google-cloud.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>Google Cloud</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure className="image">
-                                                    <img alt src="assets/processImages/we-build-cloud-services.png" className="lazyLoad isLoaded" />
-                                                    <figcaption>
-                                                        <a>
-                                                            <small>Other Cloud Services</small>
-                                                        </a>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div className="flex-none w-full xl:mt-10">
+                        <div className="relative text-center">
+                            <h5 className="text-center text-white font-bold text-xl sm:text-2xl xl:text-3xl xl:mt-8 px-2 bg-darker">DevOps</h5>
+                            <div className="flex justify-evenly mt-10">
+                                <div className="flex justify-around w-full xl:w-[65%]">
+                                    {devops.map((dev) => (
+                                        <figure className="h-56 w-56">
+                                            <img alt={dev.imgAlt} src={dev.imgSrc} className="lazyLoad isLoaded" />
+                                            <figcaption>
+                                                <a>
+                                                    <small className="text-[#dfeffc] text-base md:text-lg xl:text-xl">{dev.spanText}</small>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="border-l-2 md:border-l-4 border-dashed border-primary h-[80px] left-[50%] bottom-0 xl:-bottom-10 absolute">
+                                <div className="-left-[16px] absolute top-[30px] h-24 w-24">
+                                    <img alt src="assets/processImages/icon-arrow-down.png" className="rounded-full bg-primaryDark border border-gray-500 " />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="relative text-center xl:mt-10">
+                            <h5 className="text-center text-white font-bold text-xl sm:text-2xl xl:text-3xl xl:mt-8 px-2 bg-darker">Deployment</h5>
+                            <div className="flex justify-evenly mt-10">
+                                <div className="flex justify-around w-full xl:w-[65%]">
+                                    {Deployment.map((dev) => (
+                                        <figure className="h-56 w-56">
+                                            <img alt={dev.imgAlt} src={dev.imgSrc} className="lazyLoad isLoaded" />
+                                            <figcaption>
+                                                <a>
+                                                    <small className="text-[#dfeffc] text-base md:text-lg xl:text-xl">{dev.spanText}</small>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    ))}
                                 </div>
                             </div>
                         </div>

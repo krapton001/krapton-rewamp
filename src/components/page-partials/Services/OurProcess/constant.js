@@ -181,3 +181,68 @@ export const appHybrid = [
         cardContent: 'Create native apps for Android and iOS using React.',
     },
 ];
+
+export const testing = [
+    {
+        spanText: 'WebDriverIO',
+        imgAlt: '',
+        imgSrc: 'assets/processImages/icon-webdriver.png',
+        cardContent: 'Next-gen browser and mobile automation test framework for Node.js',
+    },
+    {
+        spanText: 'NightWatch.js',
+        imgAlt: '',
+        imgSrc: 'assets/processImages/icon-nightwatch.png',
+        cardContent: 'End-to-end automated software testing.',
+    },
+    {
+        spanText: 'Laravel Dusk',
+        imgAlt: '',
+        imgSrc: 'assets/processImages/icon-laraveldusk.png',
+        cardContent: 'Laravel Dusk provides simple end-to-end testing and browser automation.',
+    },
+];
+
+
+export const devops = [
+    {
+        spanText: 'GitHub',
+        imgAlt: 'GitHub',
+        imgSrc: 'assets/processImages/we-build-github.png',
+        
+    },
+    {
+        spanText: 'GitLab',
+        imgAlt: 'GitLab',
+        imgSrc: 'assets/processImages/we-build-gitlab.png',
+        
+    },
+    {
+        spanText: 'Bitbucket',
+        imgAlt: 'Bitbucket',
+        imgSrc: 'assets/processImages/we-build-bit-bucket.png',
+        
+    },
+]
+
+
+export const Deployment = [
+    {
+        spanText: 'AWS',
+        imgAlt: 'AWS',
+        imgSrc: 'assets/processImages/we-build-aws.png',
+        
+    },
+    {
+        spanText: 'Google Cloud',
+        imgAlt: 'Google Cloud',
+        imgSrc: 'assets/processImages/we-build-google-cloud.png',
+        
+    },
+    {
+        spanText: 'Other Cloud Services',
+        imgAlt: 'Other Cloud Services',
+        imgSrc: 'assets/processImages/we-build-cloud-services.png',
+        
+    },
+]
