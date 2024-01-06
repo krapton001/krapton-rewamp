@@ -202,3 +202,47 @@ export const testing = [
         cardContent: 'Laravel Dusk provides simple end-to-end testing and browser automation.',
     },
 ];
+
+
+export const devops = [
+    {
+        spanText: 'GitHub',
+        imgAlt: 'GitHub',
+        imgSrc: 'assets/processImages/we-build-github.png',
+        
+    },
+    {
+        spanText: 'GitLab',
+        imgAlt: 'GitLab',
+        imgSrc: 'assets/processImages/we-build-gitlab.png',
+        
+    },
+    {
+        spanText: 'Bitbucket',
+        imgAlt: 'Bitbucket',
+        imgSrc: 'assets/processImages/we-build-bit-bucket.png',
+        
+    },
+]
+
+
+export const Deployment = [
+    {
+        spanText: 'AWS',
+        imgAlt: 'AWS',
+        imgSrc: 'assets/processImages/we-build-aws.png',
+        
+    },
+    {
+        spanText: 'Google Cloud',
+        imgAlt: 'Google Cloud',
+        imgSrc: 'assets/processImages/we-build-google-cloud.png',
+        
+    },
+    {
+        spanText: 'Other Cloud Services',
+        imgAlt: 'Other Cloud Services',
+        imgSrc: 'assets/processImages/we-build-cloud-services.png',
+        
+    },
+]
