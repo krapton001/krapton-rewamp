@@ -1,12 +1,16 @@
 import LazyImg from '@/components/common/LazyImg';
 import React from 'react';
 
-const BlogCard = () => {
+const BlogCard = ({ blog }) => {
+    const { title, description, createdBy, content, imageUrl, tags, views } = blog;
+
     return (
         <article className="flex flex-col items-start justify-between">
             <div className="relative w-full">
                 <LazyImg
-                    src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                    src={imageUrl}
+                    alt={title}
+                    title={title}
                     className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -24,7 +28,7 @@ const BlogCard = () => {
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                         <a href="#">
                             <span className="absolute inset-0" />
-                            Boost your conversion rate
+                            {title}
                         </a>
                     </h3>
                     <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
