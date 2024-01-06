@@ -15,14 +15,17 @@ export const metadata = {
     ...createMetaData({ title, description, keywords, url }),
 };
 
-export default function () {
+export default async function () {
+    const res = await fetch('https://krapton.com/api/blog?limit=9');
+    const { data } = await res.json();
+
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={webPageSchema(title, description, keywords, url)} />
             <script type="application/ld+json" dangerouslySetInnerHTML={organizationSchema()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={siteNavigationElement()} />
             <script type="application/ld+json" dangerouslySetInnerHTML={breadCrumbSchema()} />
-            <BlogPage />
+            <BlogPage blogs={data} />
         </>
     );
 }
