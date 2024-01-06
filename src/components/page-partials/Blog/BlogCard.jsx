@@ -1,17 +1,18 @@
+
 import LazyImg from '@/components/common/LazyImg';
 import React from 'react';
 
 const BlogCard = ({ blog }) => {
     const { title, description, createdBy, content, imageUrl, tags = [], views, _id } = blog;
-
+    const url = `/blog/detail/${_id}`;
     const renderTags = tags.slice(0, 3).map((tag, idx) => (
         <a key={`tag-${idx}`}  className="relative border z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
         {tag}
     </a>
-    ))
+    ));
 
     return (
-        <article className="flex flex-col items-start justify-between">
+        <article className="flex flex-col border rounded-2xl border-t-0 bg-white hover:bg-slate-100 items-start justify-between">
             <div className="relative w-full">
                 <LazyImg
                     src={imageUrl}
@@ -21,7 +22,7 @@ const BlogCard = ({ blog }) => {
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
-            <div className="max-w-xl">
+            <div className="max-w-xl p-5">
                 <div className="mt-8 flex items-center gap-x-1 text-xs">
                     <time dateTime="2020-03-16" className="text-gray-500">
                         Mar 16, 2020
@@ -29,8 +30,8 @@ const BlogCard = ({ blog }) => {
                     {renderTags}
                 </div>
                 <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                        <a href={`/blog/detail/${_id}`}>
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-primary">
+                        <a href={url}>
                             <span className="absolute inset-0" />
                             {title}
                         </a>
@@ -39,7 +40,7 @@ const BlogCard = ({ blog }) => {
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
                     <LazyImg
-                        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="/assets/custom_icons/logo-full.webp"
                         className="h-10 w-10 rounded-full bg-gray-100"
                     />
                     <div className="text-sm leading-6">

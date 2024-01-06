@@ -20,6 +20,18 @@ export const services = [
         icon: 'assets/services/backup.webp',
     },
     {
+        title: 'AR / VR',
+        description:
+            'Dive into immersive experiences with our AR and VR solutions. Suitable for a range of applications, from gaming to real estate, we offer interactive 3D models, virtual environment simulations, and augmented product demos.',
+        icon: 'assets/services/AR.webp',
+    },
+    {
+        title: 'Blockchain',
+        description:
+            'Safeguard your transactions and data with our blockchain solutions. Focusing on transparency, security, and decentralization, we specialize in smart contracts, cryptocurrency development, and distributed ledger technologies.',
+        icon: 'assets/services/blockchain.webp',
+    },
+    {
         title: 'Business Process Outsourcing',
         description: 'Leverage our expertise in handling your operational tasks, allowing you to focus on core business activities and strategic growth.',
         icon: 'assets/services/',
@@ -104,18 +116,7 @@ export const services = [
             'Streamline asset management with real-time tracking solutions. Utilizing RFID and Barcode technology, we optimize inventory management, reduce asset misplacement, and offer insights into asset lifecycle.',
         icon: 'assets/services/asset-tracking.webp',
     },
-    {
-        title: 'AR / VR',
-        description:
-            'Dive into immersive experiences with our AR and VR solutions. Suitable for a range of applications, from gaming to real estate, we offer interactive 3D models, virtual environment simulations, and augmented product demos.',
-        icon: 'assets/services/AR.webp',
-    },
-    {
-        title: 'Blockchain',
-        description:
-            'Safeguard your transactions and data with our blockchain solutions. Focusing on transparency, security, and decentralization, we specialize in smart contracts, cryptocurrency development, and distributed ledger technologies.',
-        icon: 'assets/services/blockchain.webp',
-    },
+
     {
         title: 'Business Intelligence & Analytics',
         description:
