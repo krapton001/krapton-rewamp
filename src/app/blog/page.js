@@ -1,4 +1,4 @@
-import { HOST } from '@/constants';
+import { HOST, randomNumber } from '@/constants';
 import { webPageSchema } from '@/seo-utils/webPageSchema';
 import { organizationSchema } from '@/seo-utils/organizationSchema';
 import { siteNavigationElement } from '@/seo-utils/siteNavigationElement';
@@ -16,7 +16,7 @@ export const metadata = {
 };
 
 export default async function () {
-    const res = await fetch('https://krapton.com/api/blog?limit=9');
+    const res = await fetch(`https://krapton.com/api/blog?limit=9&random=${randomNumber}`);
     const {
         data,
         pagination = { },

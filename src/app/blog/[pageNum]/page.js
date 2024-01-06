@@ -5,6 +5,7 @@ import { siteNavigationElement } from '@/seo-utils/siteNavigationElement';
 import { breadCrumbSchema } from '@/seo-utils/breadCrumbSchema';
 import { createMetaData } from '@/seo-utils/CommonMeta';
 import BlogPage from '@/components/page-partials/Blog';
+import { randomNumber } from '@/constants';
 
 const url = `${HOST}/blog`;
 const title = `Krapton - Let's build something amazing together`;
@@ -17,7 +18,7 @@ export const metadata = {
 
 export default async function (props) {
     const { params = { pageNum: '2' } } = props;
-    const res = await fetch(`https://krapton.com/api/blog?limit=9&page=${params.pageNum}`);
+    const res = await fetch(`https://krapton.com/api/blog?limit=9&page=${params.pageNum}&random=${randomNumber}`);
     const {
         data,
         pagination = { },
