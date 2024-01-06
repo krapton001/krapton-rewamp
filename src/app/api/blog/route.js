@@ -62,6 +62,12 @@ export async function POST(req,res) {
  * @returns {NextResponse} - The Next.js response object with the blogs data or an error message.
  */
 export async function GET(req) {
+    
+    await runMiddleware(req, NextResponse, cors);
+    if (req.method !== 'POST') {
+        return NextResponse.status(405).json({ error: 'Method not allowed' });
+    }
+
     try {
         const isArchived = req.nextUrl.searchParams.get('isArchived') === 'true';
 
