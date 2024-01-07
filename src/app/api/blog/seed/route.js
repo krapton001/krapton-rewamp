@@ -1,6 +1,6 @@
-import { NextResponse } from "next/server";
-import blog from "../../models/blog";
-import connectDatabase from "../../libs/databaseConn";
+import { NextResponse } from 'next/server';
+import blog from '../../models/blog';
+import connectDatabase from '../../libs/databaseConn';
 
 const blogsData = {
     '-NBEJzJ1vmOd7ASJk-_Q': {
@@ -276,7 +276,6 @@ export async function POST(req) {
             message: 'Blog created',
             blog: data,
         });
-
     } catch (error) {
         return NextResponse.json({
             status: 400,

@@ -2,7 +2,6 @@ import './globals.css';
 import Header from '@/components/common/layout/Header';
 import Footer from '@/components/common/layout/Footer';
 import { Analytics } from '@vercel/analytics/react';
- 
 
 export const metadata = {
     title: 'Create Next App',
@@ -11,13 +10,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
-            <body className="font-base bg-white">
-                <Header />
-                {children}
-                <Footer />
-            </body>
-            <Analytics mode={'production'} />;
-        </html>
+        <>
+            <html lang="en">
+                <body className="font-base bg-white">
+                    <Header />
+                    {children}
+                    <Footer />
+                </body>
+            </html>
+            <Analytics mode={'production'} />
+        </>
     );
 }

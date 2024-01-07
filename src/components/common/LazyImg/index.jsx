@@ -26,7 +26,7 @@ const LazyImg = ({ src = '/assets/custom_icons/logo-full.webp', alt = APP_TITLE,
 
     const handleError = (e) => {
         e.target.src = '/assets/custom_icons/logo-full.webp';
-    }
+    };
 
     useEffect(() => {
         let observer;

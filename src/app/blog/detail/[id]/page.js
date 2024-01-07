@@ -7,7 +7,6 @@ import { createMetaData } from '@/seo-utils/CommonMeta';
 import BlogDetail from '@/components/page-partials/BlogDetail';
 import { notFound } from 'next/navigation';
 
-
 const url = `${HOST}/blog`;
 const title = `Krapton - Let's build something amazing together`;
 const description = `Krapton is a leading provider of cutting-edge software development and digital services. With years of experience, we specialize in transforming your innovative ideas into scalable and dynamic digital products.`;
@@ -20,9 +19,9 @@ export const metadata = {
 export default async function (props) {
     const { params = { id: '' } } = props;
     const res = await fetch(`https://krapton.com/api/blog/${params.id}`);
-    const { data } =  res ? await res.json() : null;
+    const { data } = res ? await res.json() : null;
 
-    if(!data) {
+    if (!data) {
         notFound();
     }
 

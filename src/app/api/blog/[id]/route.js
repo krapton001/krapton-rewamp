@@ -37,7 +37,7 @@ export async function GET(req, { params }) {
  */
 export async function PUT(req, { params }) {
     const { id } = params;
-    
+
     // Parse request body
     const { title, description, createdBy, content, imageUrl, tags, views } = await req.json();
 

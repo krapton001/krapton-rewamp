@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 // import hljs from 'highlight.js';
 // import 'highlight.js/styles/vs2015.css'; // This is the style similar to VS Code
 
-
 const CodeTypingComponent = ({ code, setCode, className, ...props }) => {
     const [typedCode, setTypedCode] = useState('');
     const ref = useRef();
@@ -16,7 +15,7 @@ const CodeTypingComponent = ({ code, setCode, className, ...props }) => {
         //     hljs.highlightElement(codeElement);
         //     codeElement.style.background = 'black';
         // }
-    }
+    };
 
     useEffect(() => {
         let index = 0;
@@ -44,17 +43,18 @@ const CodeTypingComponent = ({ code, setCode, className, ...props }) => {
                 }
             }
         });
-    
+
         observer.observe(ref.current);
         return () => {
             clearInterval(interval);
         };
     }, [code]);
-    
 
     return (
         <div className={`${className} p-4 overflow-scroll min-w-full xl:min-w-[600px] codeContainer text-code shadow-xl rounded-xl bg-black h-96`} {...props} ref={ref}>
-            <pre><code className="bg-black language-html">{typedCode}</code></pre>
+            <pre>
+                <code className="bg-black language-html">{typedCode}</code>
+            </pre>
         </div>
     );
 };

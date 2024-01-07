@@ -9,8 +9,8 @@ const ServiceList = ({ services = [] }) => {
                     <span className="block">Upgrade to exceptionality:</span> <span className="bg-gradient">Discover our elite service offerings.</span>
                 </h2>
                 <p className="text-gray-500 text-lg">
-                    Elevate your business to unprecedented heights with our commitment to Excellence in Service, where unmatched quality and reliability aren't just promises, but the foundation of
-                    everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations, but exceeding them at every turn.
+                    Elevate your business to unprecedented heights with our commitment to Excellence in Service, where unmatched quality and reliability aren't just promises, but the foundation of everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations, but
+                    exceeding them at every turn.
                 </p>
             </div>
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 xl:px-0 gap-8 xl:grid-cols-3 mt-16">

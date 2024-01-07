@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { autoTypingCode } from './constant';
 import CodeTypingComponent from '@/components/common/CodeTyping';
 
-
 const WebsiteBuilder = () => {
     const [code, setCode] = useState('');
 

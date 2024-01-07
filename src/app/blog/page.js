@@ -17,10 +17,7 @@ export const metadata = {
 
 export default async function () {
     const res = await fetch(`https://krapton.com/api/blog?limit=9&random=${randomNumber}`);
-    const {
-        data,
-        pagination = { },
-    } = await res.json();
+    const { data, pagination = {} } = await res.json();
 
     return (
         <>

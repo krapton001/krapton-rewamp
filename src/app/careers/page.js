@@ -6,7 +6,6 @@ import { breadCrumbSchema } from '@/seo-utils/breadCrumbSchema';
 import { createMetaData } from '@/seo-utils/CommonMeta';
 import CareersPage from '@/components/page-partials/Careers';
 
-
 const url = `${HOST}/careers`;
 const title = `Krapton - Let's build something amazing together`;
 const description = `Krapton is a leading provider of cutting-edge software development and digital services. With years of experience, we specialize in transforming your innovative ideas into scalable and dynamic digital products.`;

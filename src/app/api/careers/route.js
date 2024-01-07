@@ -7,16 +7,15 @@ const schema = {
     location: 'string', // on site, remote, hybrid
     rolesAndResponsiblities: 'string[]',
     requiredSkills: 'string[]',
-    status: 'string' // opened closed
+    status: 'string', // opened closed
 };
-
 
 const applySchema = {
     name: 'string',
     email: 'string',
     linkedInUrl: 'string',
     appliedFor: 'string - id of opened job',
-    resumeUrl: 'string'
-}
+    resumeUrl: 'string',
+};
 
 // create, readAll, delete

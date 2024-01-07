@@ -13,8 +13,8 @@ const HomeServices = () => {
                         Elevate Your Experience <span className="text-primary block">with Our World-Class Premium Services</span>
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Elevate your business to unprecedented heights with our commitment to Excellence in Service, where unmatched quality and reliability aren't just promises, but the foundation of
-                        everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations, but exceeding them at every turn.
+                        Elevate your business to unprecedented heights with our commitment to Excellence in Service, where unmatched quality and reliability aren't just promises, but the foundation of everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations,
+                        but exceeding them at every turn.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 px-5 gap-8 xl:grid-cols-3 mt-16">

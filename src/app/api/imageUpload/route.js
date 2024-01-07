@@ -5,7 +5,6 @@ import path from 'path';
 const fs = require('fs');
 const dir = './public/assets/upload/';
 
-
 /**
  * upload image API that stores images in public folder
  *
@@ -27,7 +26,7 @@ export async function POST(req) {
 
         const byteData = await file.arrayBuffer();
         const buffer = Buffer.from(byteData);
-        
+
         // Extract the file extension
         const extension = path.extname(file.name);
 
@@ -36,10 +35,10 @@ export async function POST(req) {
         const filePath = path.join(dir, fileName);
 
         // Ensure the directory exists
-        if (!fs.existsSync(dir)){
+        if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }
-        
+
         await writeFile(filePath, buffer);
 
         const imageUrl = `/assets/upload/${fileName}`;
