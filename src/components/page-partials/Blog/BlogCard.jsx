@@ -11,18 +11,13 @@ const BlogCard = ({ blog }) => {
     ));
 
     return (
-        <article className="flex flex-col border rounded-2xl border-t-0 bg-white hover:bg-slate-100 items-start justify-between">
+        <article className="flex flex-col border rounded-2xl border-t-0 bg-white hover:bg-slate-100 items-start">
             <div className="relative w-full">
                 <LazyImg src={imageUrl} alt={title} title={title} className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
-            <div className="max-w-xl p-5">
-                <div className="mt-8 flex items-center gap-x-1 text-xs">
-                    <time dateTime="2020-03-16" className="text-gray-500">
-                        Mar 16, 2020
-                    </time>
-                    {renderTags}
-                </div>
+            <div className="max-w-xl px-4 pb-4">
+                <div className="mt-8 flex items-center justify-center gap-x-1 text-xs">{renderTags}</div>
                 <div className="group relative">
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-primary">
                         <a href={url}>
@@ -34,6 +29,7 @@ const BlogCard = ({ blog }) => {
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
                     <LazyImg src="/assets/custom_icons/logo-full.webp" className="h-10 w-10 rounded-full bg-gray-100" />
+
                     <div className="text-sm leading-6">
                         <p className="font-semibold text-gray-900">
                             <span>
