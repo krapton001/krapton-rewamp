@@ -33,7 +33,12 @@ const Pagination = ({ pagination }) => {
         <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 mt-20 sm:px-6">
             <div className=" flex flex-1 items-center justify-center md:justify-between ">
                 <div className="hidden lg:block">
-                    <p className="text-sm text-gray-700">Showing 9 blogs out {totalBlogs}</p>
+                    <p className="text-sm text-gray-700">
+                        Showing <span className="font-medium">{limit * currentPage - limit + 1} </span>
+                        to <span className="font-medium">{limit * currentPage} </span>
+                        of <span className="font-medium">{totalBlogs} </span>
+                        results{' '}
+                    </p>
                 </div>
                 <div>
                     <nav className="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
