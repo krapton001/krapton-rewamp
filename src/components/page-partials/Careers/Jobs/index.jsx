@@ -8,7 +8,9 @@ const JobOpenings = () => {
                 <div className="text-center relative ">
                     <h2 className="  py-2 font-bold text-3xl lg:text-6xl ">Open Positions</h2>
 
-                    <p className="text-gray-900 my-5 text-2xl mt-10 leading-10 text-justify font-light p-3 pb-16 mb-2.5">Apply to one of our open positions below, or send your resume and cover letter to jobs@codeniatechnologies.com</p>
+                    <p className="text-gray-900 my-5 text-2xl mt-10 leading-10 text-justify font-light p-3 pb-16 mb-2.5">
+                        Apply to one of our open positions below, or send your resume and cover letter to jobs@codeniatechnologies.com
+                    </p>
                     <Joblist />
                 </div>
             </div>

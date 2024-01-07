@@ -9,7 +9,8 @@ const Intro = () => {
                     Krapton Transforming <span className="text-primary block">Challenges into Revolutionary Innovations</span>
                 </h3>
                 <p className="text-gray-300 text-center text-lg mb-20 lg:px-20">
-                    Krapton stands at the forefront of innovation, redefining the very essence of progress with each stride it takes. This isn't just a company; it's a beacon of transformative power, turning daunting challenges into groundbreaking innovations
+                    Krapton stands at the forefront of innovation, redefining the very essence of progress with each stride it takes. This isn't just a company; it's a beacon of transformative power,
+                    turning daunting challenges into groundbreaking innovations
                 </p>
                 <WebsiteBuilder />
             </div>

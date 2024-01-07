@@ -3,8 +3,8 @@ const Process = () => {
         <section classname="lg:max-w-7xl text-center mx-auto mb-5 md:mb-9  pb-32 border-b-2">
             <h2 classname="text-gray-800 bg-gradient py-2 text-3xl lg:text-6xl m-12 font-semibold">A Culture That Fosters Growth And Excellence</h2>
             <span classname="text-gray-700 my-5 text-2xl mt-10 leading-10 font-light ">
-                Krapton offers its team members an environment where each person can express their individuality and unique talents on a regular basis. Each team member takes an active interest in the success and wellbeing of their peers, and as a result, shares a sense of closeness uncommon in a
-                corporate environment.
+                Krapton offers its team members an environment where each person can express their individuality and unique talents on a regular basis. Each team member takes an active interest in the
+                success and wellbeing of their peers, and as a result, shares a sense of closeness uncommon in a corporate environment.
             </span>
             <div classname="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 xl:px-0 gap-8 xl:grid-cols-3 mt-16">
                 <div className="max-w-sm rounded-xl min-h-80 bg-white overflow-hidden border relative flex mt-12 items-center justify-center">

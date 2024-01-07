@@ -12,8 +12,9 @@ const Info = () => {
                     </h2>
                     <Background />
                     <p className="text-gray-900 my-5 text-xl mt-10 leading-2 text-left font-light lg:text-2xl lg:leading-10">
-                        We believe that businesses don&apos;t pay taxes, people do. We believe that businesses don&apos;t feed families, people do. We believe that managing your advertising dollars is an enormous responsibility, because whether you&apos;re part of a Fortune 100 company or
-                        you&apos;re the owner of a small online boutique, the results we generate effect what you take home to your family at the end of the day.When we manage your advertising dollars, we&apos;re managing them as if they were our own.
+                        We believe that businesses don&apos;t pay taxes, people do. We believe that businesses don&apos;t feed families, people do. We believe that managing your advertising dollars is
+                        an enormous responsibility, because whether you&apos;re part of a Fortune 100 company or you&apos;re the owner of a small online boutique, the results we generate effect what
+                        you take home to your family at the end of the day.When we manage your advertising dollars, we&apos;re managing them as if they were our own.
                     </p>
                 </div>
             </div>

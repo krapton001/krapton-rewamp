@@ -58,7 +58,11 @@ const EditableContent = () => {
 
                         <EditButton onClick={handleAddList}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"
+                                />
                             </svg>
                             List
                         </EditButton>
@@ -71,9 +75,11 @@ const EditableContent = () => {
                         </EditButton>
                     </div>
                     <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg" id="content" contentEditable="true">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mattis ligula. Donec sed ipsum sed augue pharetra ultricies. Praesent tincidunt ante at metus iaculis condimentum. Etiam et augue semper, venenatis magna a, finibus dolor. Mauris viverra tincidunt
-                        nulla ut tempor. Vivamus nec tortor malesuada, dignissim dolor vel, rhoncus eros. Aliquam porta, nulla aliquam suscipit viverra, sem elit euismod felis, et facilisis turpis sapien sed felis. Cras sit amet convallis enim. Mauris a nisi lobortis magna iaculis semper. Ut euismod
-                        nisi ut erat ornare, vitae cursus tellus vestibulum. Nam tristique vel arcu a facilisis. Nulla egestas, dui ac hendrerit ultrices, libero odio gravida risus, a sagittis magna ligula fringilla tortor. Pellentesque rutrum congue nisi vitae faucibus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mattis ligula. Donec sed ipsum sed augue pharetra ultricies. Praesent tincidunt ante at metus
+                        iaculis condimentum. Etiam et augue semper, venenatis magna a, finibus dolor. Mauris viverra tincidunt nulla ut tempor. Vivamus nec tortor malesuada, dignissim dolor vel,
+                        rhoncus eros. Aliquam porta, nulla aliquam suscipit viverra, sem elit euismod felis, et facilisis turpis sapien sed felis. Cras sit amet convallis enim. Mauris a nisi lobortis
+                        magna iaculis semper. Ut euismod nisi ut erat ornare, vitae cursus tellus vestibulum. Nam tristique vel arcu a facilisis. Nulla egestas, dui ac hendrerit ultrices, libero odio
+                        gravida risus, a sagittis magna ligula fringilla tortor. Pellentesque rutrum congue nisi vitae faucibus.
                     </div>
                 </div>
             </div>

@@ -21,12 +21,14 @@ export const services = [
     },
     {
         title: 'AR / VR',
-        description: 'Dive into immersive experiences with our AR and VR solutions. Suitable for a range of applications, from gaming to real estate, we offer interactive 3D models, virtual environment simulations, and augmented product demos.',
+        description:
+            'Dive into immersive experiences with our AR and VR solutions. Suitable for a range of applications, from gaming to real estate, we offer interactive 3D models, virtual environment simulations, and augmented product demos.',
         icon: 'assets/services/AR.webp',
     },
     {
         title: 'Blockchain',
-        description: 'Safeguard your transactions and data with our blockchain solutions. Focusing on transparency, security, and decentralization, we specialize in smart contracts, cryptocurrency development, and distributed ledger technologies.',
+        description:
+            'Safeguard your transactions and data with our blockchain solutions. Focusing on transparency, security, and decentralization, we specialize in smart contracts, cryptocurrency development, and distributed ledger technologies.',
         icon: 'assets/services/blockchain.webp',
     },
     {
@@ -41,7 +43,8 @@ export const services = [
     },
     {
         title: 'DevOps',
-        description: 'Boost collaboration and streamline your development pipeline. Our DevOps solutions bridge the gap between development and operations, ensuring faster delivery and higher quality.',
+        description:
+            'Boost collaboration and streamline your development pipeline. Our DevOps solutions bridge the gap between development and operations, ensuring faster delivery and higher quality.',
         icon: 'assets/services/',
     },
     {
@@ -81,7 +84,8 @@ export const services = [
     },
     {
         title: 'Software Security',
-        description: 'Protect your software assets from vulnerabilities. Our security services focus on identifying and rectifying potential threats, ensuring data protection and application integrity.',
+        description:
+            'Protect your software assets from vulnerabilities. Our security services focus on identifying and rectifying potential threats, ensuring data protection and application integrity.',
         icon: 'assets/services/software-security.webp',
     },
     {
@@ -96,28 +100,33 @@ export const services = [
     },
     {
         title: 'Animation & Graphic Design',
-        description: "Transforming concepts into compelling visuals, our team specializes in creating immersive animations and stunning graphic designs. Catering to diverse sectors, we employ modern tools to illustrate your brand's story effectively.",
+        description:
+            "Transforming concepts into compelling visuals, our team specializes in creating immersive animations and stunning graphic designs. Catering to diverse sectors, we employ modern tools to illustrate your brand's story effectively.",
         icon: 'assets/services/graphic.webp',
     },
     {
         title: 'Artificial Intelligence',
-        description: 'Harness the potential of AI with our specialized solutions. From predictive analytics to machine learning models, we provide intelligent systems tailored to optimize operations and deliver unparalleled user experiences.',
+        description:
+            'Harness the potential of AI with our specialized solutions. From predictive analytics to machine learning models, we provide intelligent systems tailored to optimize operations and deliver unparalleled user experiences.',
         icon: 'assets/services/AI.webp',
     },
     {
         title: 'Asset Tracking (RFID & Barcode)',
-        description: 'Streamline asset management with real-time tracking solutions. Utilizing RFID and Barcode technology, we optimize inventory management, reduce asset misplacement, and offer insights into asset lifecycle.',
+        description:
+            'Streamline asset management with real-time tracking solutions. Utilizing RFID and Barcode technology, we optimize inventory management, reduce asset misplacement, and offer insights into asset lifecycle.',
         icon: 'assets/services/asset-tracking.webp',
     },
 
     {
         title: 'Business Intelligence & Analytics',
-        description: 'Leverage data-driven insights with our BI and analytics tools. Transform raw data into actionable intelligence, ensuring well-informed decision-making processes and optimized business strategies.',
+        description:
+            'Leverage data-driven insights with our BI and analytics tools. Transform raw data into actionable intelligence, ensuring well-informed decision-making processes and optimized business strategies.',
         icon: 'assets/services/business-intelligence.webp',
     },
     {
         title: 'Cloud',
-        description: 'Seamlessly transition to the cloud with our specialized solutions. Offering services across IaaS, PaaS, and SaaS, we ensure scalability, flexibility, and security for all your operations.',
+        description:
+            'Seamlessly transition to the cloud with our specialized solutions. Offering services across IaaS, PaaS, and SaaS, we ensure scalability, flexibility, and security for all your operations.',
         icon: 'assets/services/cloud.webp',
     },
 ];

@@ -141,7 +141,12 @@ export const OurProcessService = () => {
                                 <h6 className="mb-5 text-center text-gray-200 text-lg md:text-xl font-bold">iOS</h6>
                                 <div className="list-border-rounded border border-[#98b7fa96] shadow-sm bg-gray-900 shadow-[#98b7fa96] hover:shadow-processCard transition-shadow ease-in duration-300 rounded-xl">
                                     <ul className="p-0 bg-transparent">
-                                        <ProcessList spanText={'Swift'} imgAlt={'Swift Icon'} imgSrc={'assets/processImages/icon-swift.png'} cardContent="The official language for iOS mobile app development." />
+                                        <ProcessList
+                                            spanText={'Swift'}
+                                            imgAlt={'Swift Icon'}
+                                            imgSrc={'assets/processImages/icon-swift.png'}
+                                            cardContent="The official language for iOS mobile app development."
+                                        />
                                     </ul>
                                 </div>
                             </div>

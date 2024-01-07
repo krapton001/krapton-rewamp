@@ -34,7 +34,15 @@ export default function Testimonials() {
                     {testimonials.map((columnGroup, columnGroupIdx) => (
                         <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0">
                             {columnGroup.map((column, columnIdx) => (
-                                <div key={columnIdx} className={classNames((columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8')}>
+                                <div
+                                    key={columnIdx}
+                                    className={classNames(
+                                        (columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1)
+                                            ? 'xl:row-span-2'
+                                            : 'xl:row-start-1',
+                                        'space-y-8'
+                                    )}
+                                >
                                     {column.map((testimonial) => (
                                         <figure key={testimonial.author.handle} className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                                             <blockquote className="text-gray-900">
