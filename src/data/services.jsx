@@ -2,17 +2,17 @@ export const services = [
     {
         title: 'API Development',
         description: 'Empower your applications with our robust API development services. Seamless data exchange, integration, and functionality enhancements are just a click away.',
-        icon: 'assets/services/API.webp',
+        icon: 'assets/services/api.png',
     },
     {
         title: 'Application Development',
         description: 'Bring your ideas to life with custom-tailored applications built to meet your specific business needs, ensuring enhanced efficiency and user engagement.',
-        icon: 'assets/services/app-development.webp',
+        icon: 'assets/services/app.png',
     },
     {
         title: 'Application Maintenance',
         description: 'Our ongoing maintenance services ensure your applications remain up-to-date, efficient, and bug-free, delivering consistent performance and user satisfaction.',
-        icon: 'assets/services/app-maintenance.webp',
+        icon: 'assets/services/maintenance.png',
     },
     {
         title: 'Backup & Disaster Recovery',
@@ -23,44 +23,44 @@ export const services = [
         title: 'AR / VR',
         description:
             'Dive into immersive experiences with our AR and VR solutions. Suitable for a range of applications, from gaming to real estate, we offer interactive 3D models, virtual environment simulations, and augmented product demos.',
-        icon: 'assets/services/AR.webp',
+        icon: 'assets/services/ar.png',
     },
     {
         title: 'Blockchain',
         description:
             'Safeguard your transactions and data with our blockchain solutions. Focusing on transparency, security, and decentralization, we specialize in smart contracts, cryptocurrency development, and distributed ledger technologies.',
-        icon: 'assets/services/blockchain.webp',
+        icon: 'assets/services/blockchain.png',
     },
     {
         title: 'Business Process Outsourcing',
         description: 'Leverage our expertise in handling your operational tasks, allowing you to focus on core business activities and strategic growth.',
-        icon: 'assets/services/',
+        icon: 'assets/services/finance.png',
     },
     {
         title: 'Custom Software Services',
         description: 'Unique challenges require unique solutions. Our custom software services cater to specific business needs, ensuring optimized operations and increased ROI.',
-        icon: 'assets/services/',
+        icon: 'assets/services/custom-software.png',
     },
     {
         title: 'DevOps',
         description:
             'Boost collaboration and streamline your development pipeline. Our DevOps solutions bridge the gap between development and operations, ensuring faster delivery and higher quality.',
-        icon: 'assets/services/',
+        icon: 'assets/services/devops.png',
     },
     {
         title: 'Digital Transformation',
         description: 'Redefine and future-proof your business in this digital age. From strategy to execution, our digital transformation services ensure you remain at the forefront of innovation.',
-        icon: 'assets/services/digital-transformation.webp',
+        icon: 'assets/services/digital-transformation.png',
     },
     {
         title: 'Implementation & Deployment',
         description: 'From planning to execution, our experts ensure a seamless and hassle-free implementation and deployment of your software solutions, ensuring quick time-to-market.',
-        icon: 'assets/services/deployment.webp',
+        icon: 'assets/services/launching.png',
     },
     {
         title: 'Infrastructure Support',
         description: 'Keep your IT infrastructure resilient, updated, and optimized. Our dedicated team provides 24/7 support, ensuring smooth business operations.',
-        icon: 'assets/services/infrastructure.webp',
+        icon: 'assets/services/cyber-security.png',
     },
     {
         title: 'Migrations & Upgrades',
