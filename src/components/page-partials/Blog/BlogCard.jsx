@@ -1,13 +1,14 @@
 import LazyImg from '@/components/common/LazyImg';
-import React from 'react';
+import React, { Fragment } from 'react';
+import BlogTag from './BlogTag';
 
 const BlogCard = ({ blog }) => {
     const { title, description, createdBy, imageUrl = '/assets/custom_icons/logo-full.webp', tags = [], views, _id } = blog;
     const url = `/blog/detail/${_id}`;
     const renderTags = tags.slice(0, 3).map((tag, idx) => (
-        <a key={`tag-${idx}`} className="relative border z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-            {tag}
-        </a>
+        <Fragment key={`tag-${idx}`}>
+            <BlogTag>{tag}</BlogTag>
+        </Fragment>
     ));
 
     return (
@@ -17,9 +18,9 @@ const BlogCard = ({ blog }) => {
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
             <div className="max-w-xl px-4 pb-4">
-                <div className="mt-8 flex items-center justify-center gap-x-1 text-xs">{renderTags}</div>
+                <div className="mt-8 flex items-center justify-start gap-x-1 text-xs">{renderTags}</div>
                 <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-primary">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-500">
                         <a href={url}>
                             <span className="absolute inset-0" />
                             {title}
