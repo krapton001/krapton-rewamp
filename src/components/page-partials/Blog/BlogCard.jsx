@@ -1,6 +1,7 @@
 import LazyImg from '@/components/common/LazyImg';
 import React, { Fragment } from 'react';
 import BlogTag from './BlogTag';
+import { DEFAULT_IMAGE } from '@/constants';
 
 const BlogCard = ({ blog }) => {
     const { title, description, createdBy, imageUrl = '/assets/custom_icons/logo-full.webp', tags = [], views, _id } = blog;
@@ -12,37 +13,39 @@ const BlogCard = ({ blog }) => {
     ));
 
     return (
-        <article className="flex flex-col border rounded-2xl border-t-0 bg-white hover:bg-slate-100 items-start">
-            <div className="relative w-full">
-                <LazyImg src={imageUrl} alt={title} title={title} className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+        <div className="overflow-hidden rounded-xl ring-1 ring-gray-200  shadow bg-white  relative group flex flex-col hover:ring-2 hover:ring-primary-500  hover:bg-gray-100/50 ">
+            <div className="aspect-w-4 aspect-h-2">
+                <img
+                    src={imageUrl}
+                    className="object-cover h-52 object-top w-full"
+                />
             </div>
-            <div className="max-w-xl px-4 pb-4">
-                <div className="mt-8 flex items-center justify-start gap-x-1 text-xs">{renderTags}</div>
-                <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-500">
-                        <a href={url}>
-                            <span className="absolute inset-0" />
-                            {title}
-                        </a>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{description}</p>
+            <div className="flex-1 px-4 py-5 sm:p-6">
+                <a href={url} className="focus:outline-none" aria-label="Nuxt 3.9" tabIndex={-1}>
+                    <span className="absolute inset-0" aria-hidden="true" />
+                </a>
+                <div className="mb-6 flex gap-2">
+                    {renderTags}
                 </div>
-                <div className="relative mt-8 flex items-center gap-x-4">
-                    <LazyImg src="/assets/custom_icons/logo-full.webp" className="h-10 w-10 rounded-full bg-gray-100" />
+                <p className="text-gray-900  font-semibold truncate flex items-center gap-1.5 text-lg">
+                    {title}
+                </p>
+                <p className="text-[15px] text-gray-500  mt-1 line-clamp-2">
+                    {description}
+                </p>
+            </div>
+            <div className="px-4 py-4 sm:px-6 pt-0">
 
-                    <div className="text-sm leading-6">
-                        <p className="font-semibold text-gray-900">
-                            <span>
-                                <span className="absolute inset-0" />
-                                {createdBy}
-                            </span>
-                        </p>
-                        <p className="text-gray-600">Co-Founder / CTO</p>
+                <div className="flex items-center justify-between gap-3">
+                    <time className="text-gray-500 ">December 25, 2023</time>
+                    <div className="inline-flex flex-row-reverse justify-end">
+                        <span className="relative inline-flex items-center justify-center flex-shrink-0 rounded-full h-6 w-6 text-xs ring-2 ring-white  -me-1.5 first:me-0 lg:hover:scale-110 lg:hover:ring-primary-500  transition-transform">
+                            <img className="rounded-full h-6 w-6 text-xs" alt={createdBy} src={DEFAULT_IMAGE} />
+                        </span>
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
     );
 };
 
