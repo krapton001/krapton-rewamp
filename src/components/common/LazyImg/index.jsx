@@ -1,5 +1,5 @@
 'use client';
-import { APP_TITLE } from '@/constants';
+import { APP_TITLE, DEFAULT_IMAGE } from '@/constants';
 import React, { useState, useEffect } from 'react';
 
 const ImageError = ({ message }) => {
@@ -16,7 +16,7 @@ const ImageError = ({ message }) => {
     return <div style={styles}>{message}</div>;
 };
 
-const LazyImg = ({ src = '/assets/custom_icons/logo-full.webp', alt = APP_TITLE, placeholder, title = APP_TITLE, ...props }) => {
+const LazyImg = ({ src = DEFAULT_IMAGE, alt = APP_TITLE, placeholder, title = APP_TITLE, ...props }) => {
     const [imageSrc, setImageSrc] = useState(placeholder || src);
     const [imageRef, setImageRef] = useState();
 
@@ -25,7 +25,7 @@ const LazyImg = ({ src = '/assets/custom_icons/logo-full.webp', alt = APP_TITLE,
     };
 
     const handleError = (e) => {
-        e.target.src = '/assets/custom_icons/logo-full.webp';
+        e.target.src = DEFAULT_IMAGE;
     };
 
     useEffect(() => {
