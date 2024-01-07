@@ -20,16 +20,16 @@ const BlogDetail = ({ blog }) => {
             <div className="mx-auto max-w-3xl text-base relative leading-7 text-gray-700">
                 <h1 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight text-gray-900">{title}</h1>
                 <div className="md:flex md:items-center md:justify-between md:space-x-5 mb-10 mt-5">
-                    <div className="flex items-start space-x-5">
-                        <div className="flex-shrink-0">
+                    <div className="flex items-center mt-2  space-x-5">
+                        <div className="flex-shrink-0 items-center">
                             <div className="relative">
-                                <LazyImg className="h-16 w-16 rounded-full" />
+                                <LazyImg className="rounded-full h-12 w-12" />
                                 <span className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true" />
                             </div>
                         </div>
 
-                        <div className="pt-1.5">
-                            <h2 className="text-lg font-bold text-gray-900">{createdBy}</h2>
+                        <div className="">
+                            <h2 className="text-md font-bold text-gray-900">{createdBy}</h2>
                             <p className="text-sm font-medium text-gray-500">
                                 <time dateTime="2020-08-25">August 25, 2020</time>
                             </p>
