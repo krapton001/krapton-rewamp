@@ -1,4 +1,4 @@
-export const HTTP_STATUS_CODES = {
+const HTTP_STATUS_CODES = {
     OK: 200,
     CREATED: 201,
     ACCEPTED: 202,
@@ -53,3 +53,5 @@ export const HTTP_STATUS_CODES = {
     NOT_EXTENDED: 510,
     NETWORK_AUTHENTICATION_REQUIRED: 511,
 };
+
+export default HTTP_STATUS_CODES;
