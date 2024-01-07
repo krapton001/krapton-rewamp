@@ -25,7 +25,7 @@ const LazyImg = ({ src = DEFAULT_IMAGE, alt = APP_TITLE, placeholder, title = AP
     };
 
     const handleError = (e) => {
-        e.target.src = DEFAULT_IMAGE;
+        e.target.src = '/assets/services/image.png';
     };
 
     useEffect(() => {

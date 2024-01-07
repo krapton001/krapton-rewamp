@@ -2,7 +2,7 @@ export const services = [
     {
         title: 'API Development',
         description: 'Empower your applications with our robust API development services. Seamless data exchange, integration, and functionality enhancements are just a click away.',
-        icon: 'assets/services/api.png',
+        icon: '/assets/services/api.png',
     },
     {
         title: 'Application Development',
@@ -23,7 +23,7 @@ export const services = [
         title: 'AR / VR',
         description:
             'Dive into immersive experiences with our AR and VR solutions. Suitable for a range of applications, from gaming to real estate, we offer interactive 3D models, virtual environment simulations, and augmented product demos.',
-        icon: 'assets/services/ar.png',
+        icon: '/assets/services/ar.png',
     },
     {
         title: 'Blockchain',
