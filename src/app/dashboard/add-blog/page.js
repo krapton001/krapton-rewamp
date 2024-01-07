@@ -3,6 +3,8 @@ import React from 'react';
 import BottomOptions from './BottomOptions';
 import EditableContent from './EditableContent';
 import ImageContent from './ImageContent';
+import { HOST } from '@/constants';
+//const HOST = 'http://localhost:3000'
 
 const AddBlog = () => {
     const getInnterHtml = (id) => {
@@ -12,7 +14,43 @@ const AddBlog = () => {
     const getValue = (id) => {
         return document.getElementById(id)?.value || '';
     };
+    const uploadImage = async () => {
+        // Access the file input element and its files
+        const fileInput = document.getElementById('input-file');
+        if (fileInput && fileInput.files.length > 0) {
+            const file = fileInput.files[0];
+
+            // Extract the file extension
+            const fileExtension = file.name.split('.').pop();
+    
+            // Replace spaces and append file extension to 'somefile'
+            // For more sophisticated encryption, replace Date.now() with your encryption method
+            const newFileName = `somefile_${Date.now()}.${fileExtension}`.replace(/\s+/g, '');
+    
+            // Create a FormData object and append the file
+            var formData = new FormData();
+            formData.append('file', file, newFileName);
+
+            // Define requestOptions for fetch
+            var requestOptions = {
+                method: 'POST',
+                body: formData,
+                redirect: 'follow'
+            };
+    
+            // Make the request to your server
+            const res = await fetch(`${HOST}/api/imageUpload?filename=${newFileName}`, requestOptions)
+            const data = await res.json();
+            return data
+        } else {
+            console.log('No file selected');
+        }
+    };
+    
+
     const handleSubmit = async () => {
+        const { url } = await uploadImage();
+        if(!url) return;
         const title = getInnterHtml('title');
         const description = getInnterHtml('description');
         const content = getInnterHtml('content');
@@ -25,6 +63,7 @@ const AddBlog = () => {
             createdBy,
             content,
             tags,
+            imageUrl: url
         };
 
         const response = await fetch(`/api/blog`, {
