@@ -13,9 +13,9 @@ const BlogCard = ({ blog }) => {
     ));
 
     return (
-        <div className="overflow-hidden rounded-xl ring-1 ring-gray-200  shadow bg-white  relative group flex flex-col hover:ring-2 hover:ring-primary-500  hover:bg-gray-100/50 ">
+        <div className="overflow-hidden rounded-xl ring-1 ring-gray-200  shadow bg-white  relative group flex flex-col hover:ring-2 hover:ring-primary  hover:bg-gray-100/50 hover:border-primary ">
             <div className="aspect-w-4 aspect-h-2">
-                <img
+                <LazyImg
                     src={imageUrl}
                     className="object-cover h-52 object-top w-full"
                 />
@@ -40,7 +40,7 @@ const BlogCard = ({ blog }) => {
                     <time className="text-gray-500 ">December 25, 2023</time>
                     <div className="inline-flex flex-row-reverse justify-end">
                         <span className="relative inline-flex items-center justify-center flex-shrink-0 rounded-full h-6 w-6 text-xs ring-2 ring-white  -me-1.5 first:me-0 lg:hover:scale-110 lg:hover:ring-primary-500  transition-transform">
-                            <img className="rounded-full h-6 w-6 text-xs" alt={createdBy} src={DEFAULT_IMAGE} />
+                            <LazyImg className="rounded-full h-6 w-6 text-xs" alt={createdBy} src={DEFAULT_IMAGE} />
                         </span>
                     </div>
                 </div>
