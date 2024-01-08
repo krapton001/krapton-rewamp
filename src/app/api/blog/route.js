@@ -40,16 +40,27 @@ export async function POST(req) {
 export async function GET(req) {
     try {
         const isArchived = req.nextUrl.searchParams.get('isArchived') === 'true';
+        const tags = req.nextUrl.searchParams.get('tags');
+
+        // Connect to the database
+        await connectDatabase();
+
+        // Construct query based on parameters
+        let query = {};
+        if (tags) {
+            const tagsArray = tags.split(',').map((tag) => tag.trim());
+            query.tags = { $in: tagsArray }; // Filter by tags if present
+        } else {
+            query.isArchived = isArchived; // Filter by archived status if tags not present
+        }
 
         // Pagination parameters
         const page = parseInt(req.nextUrl.searchParams.get('page')) || 1;
         const limit = parseInt(req.nextUrl.searchParams.get('limit')) || 10;
         const skip = (page - 1) * limit;
 
-        await connectDatabase();
-
         // Find blogs with pagination
-        const allBlogs = await blog.find({}).sort({ createdAt: -1 }).skip(skip).limit(limit);
+        const allBlogs = await blog.find(query).sort({ createdAt: -1 }).skip(skip).limit(limit);
 
         // Get total number of blogs to calculate total pages
         const totalBlogs = await blog.countDocuments({});
