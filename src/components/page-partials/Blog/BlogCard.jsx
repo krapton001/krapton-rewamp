@@ -13,7 +13,7 @@ const BlogCard = ({ blog }) => {
     ));
 
     return (
-        <div className="overflow-hidden rounded-xl ring-1 ring-gray-200  shadow bg-white  relative group flex flex-col hover:ring-2 hover:ring-primary  hover:bg-gray-100/50 hover:border-primary ">
+        <div className="overflow-hidden font-poppins  rounded-xl ring-1 ring-gray-200  shadow bg-white  relative group flex flex-col hover:ring-2 hover:ring-primary  hover:bg-gray-100/50 hover:border-primary ">
             <div className="aspect-w-4 aspect-h-2">
                 <LazyImg
                     src={imageUrl}

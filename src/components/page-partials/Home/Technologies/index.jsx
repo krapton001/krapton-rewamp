@@ -12,7 +12,7 @@ const Technologies = () => {
                     <h3 className="text-primary mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
                         <span className="text-white">Expert in Multiple </span> Technologies with Over 1000+ Projects Completed!
                     </h3>
-                    <p className="text-gray-100 text-lg">
+                    <p className="text-gray-100 text-lg font-poppins ">
                         Where Innovation Meets Imagination this exploration is not just about understanding the latest gadgets or software but about immersing oneself in the realm where creative
                         genius and technological prowess converge.
                     </p>

@@ -15,11 +15,10 @@ const BlogDetail = ({ blog }) => {
     ));
 
     return (
-        <div className=" px-6 py-32 lg:px-8 relative">
-                    <Background />
+        <div className="py-10 lg:py-10 lg:px-8 relative">
             <div className="mx-auto max-w-3xl text-base relative leading-7 text-gray-700">
-                <h1 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight text-gray-900">{title}</h1>
-                <div className="md:flex md:items-center md:justify-between md:space-x-5 mb-10 mt-5">
+                <h1 className="mt-2  px-6  text-4xl md:text-5xl font-bold tracking-tight text-gray-900">{title}</h1>
+                <div className="md:flex  px-6  md:items-center md:justify-between md:space-x-5 mb-10 mt-5">
                     <div className="flex items-center mt-2  space-x-5">
                         <div className="flex-shrink-0 items-center">
                             <div className="relative">
@@ -38,11 +37,11 @@ const BlogDetail = ({ blog }) => {
                     <div className="flex items-center justify-start mt-5 md:mt-0 gap-3">{renderTags}</div>
                 </div>
 
-                <figure className="mt-10 mb-20">
-                    <LazyImg title={`${title} - ${description}`} alt={description} className="aspect-video rounded-xl bg-gray-50 object-cover mx-auto w-screen h-96" src={imageUrl} />
+                <figure className="mt-10 mb-10 lg:px-6">
+                    <LazyImg title={`${title} - ${description}`} alt={description} className="aspect-video lg:rounded-xl bg-gray-50 object-cover mx-auto w-screen h-96" src={imageUrl} />
                 </figure>
-                <p className="mt-6 text-xl leading-8">{description} </p>
-                <div className="mt-10" dangerouslySetInnerHTML={{ __html: content }} />
+                <p className="mt-2  px-6  text-xl leading-8">{description} </p>
+                <div className="mt-10  px-6 " dangerouslySetInnerHTML={{ __html: content }} />
             </div>
         </div>
     );

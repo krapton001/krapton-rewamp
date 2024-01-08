@@ -32,6 +32,14 @@ module.exports = {
                     'Segoe UI Symbol',
                     'Noto Color Emoji',
                 ],
+                poppins: [
+                    'Poppins',
+                    'DM Sans',
+                    'DM Sans fallback',
+                    'ui-sans-serif',
+                    'system-ui',
+                    '-apple-system',
+                ],
             },
             colors: {
                 primary: '#00c16a',

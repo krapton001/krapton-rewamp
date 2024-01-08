@@ -12,7 +12,7 @@ const HomeServices = () => {
                     <h2 className="text-gray-900 mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
                         Elevate Your Experience <span className="text-primary block">with Our World-Class Premium Services</span>
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600 text-lg font-poppins ">
                         Elevate your business to unprecedented heights with our commitment to Excellence in Service, where unmatched quality and reliability aren't just promises, but the foundation of
                         everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations, but exceeding them at every turn.
                     </p>

@@ -17,7 +17,7 @@ export default function Testimonials() {
                     <h2 className="text-lg font-semibold leading-8 tracking-tight text-primaryDark">Testimonials</h2>
                     <p className="mt-2 text-3xl  md:text-5xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
                 </div>
-                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+                <div className="mx-auto mt-16 font-poppins  grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                     <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
                         <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
                             <p>{`“${featuredTestimonial.body}”`}</p>

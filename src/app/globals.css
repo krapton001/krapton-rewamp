@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .bg-gradient {
     background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
