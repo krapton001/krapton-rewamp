@@ -15,7 +15,7 @@ const BlogDetail = ({ blog }) => {
     ));
 
     return (
-        <div className="py-10 lg:py-10 lg:px-8 relative">
+        <div className="py-10 lg:py-10 lg:px-8 relative font-poppins ">
             <div className="mx-auto max-w-3xl text-base relative leading-7 text-gray-700">
                 <h1 className="mt-2  px-6  text-4xl md:text-5xl font-bold tracking-tight text-gray-900">{title}</h1>
                 <div className="md:flex  px-6  md:items-center md:justify-between md:space-x-5 mb-10 mt-5">
