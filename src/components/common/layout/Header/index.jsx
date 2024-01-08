@@ -33,7 +33,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={` ${isScrolled ? ' backdrop-blur-sm bg-white/70' : 'bg-transparent'}  sticky top-0 z-[999]`}>
+        <header className={` ${isScrolled ? ' backdrop-blur-sm bg-white/70' : 'bg-transparent'}  sticky top-0 z-[999] font-poppins `}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:py-1 xl:px-0" aria-label="Global">
                 <div className="flex items-center gap-x-12">
                     <a href="/" className="-m-1.5 p-1.5">
