@@ -1,7 +1,7 @@
 import React from 'react';
 
-const HyperLink = ({ href, title, children, fontSize = 'md', type = 'normal', className = '', ...props }) => {
-    const commonClassName = `rounded-lg py-2 px-4 flex items-center justify-center font-light gap-2  tracking-wider cursor-pointer rounded py-2 px-4 flex items-center justify-center gap-2 text-${fontSize} tracking-wider cursor-pointer `;
+const HyperLink = ({ href, title, children, fontSize = 'md', type = 'normal', className = '', rounded="full", py='2', ...props }) => {
+    const commonClassName = ` rounded-${rounded}  flex items-center  justify-center font-light gap-2  tracking-wider cursor-pointer  py-${py} px-5 flex items-center justify-center gap-2 text-${fontSize} tracking-wider cursor-pointer `;
 
     /** Renders normal button */
     if (type === 'normal')
