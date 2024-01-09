@@ -13,7 +13,7 @@ const ServiceList = ({ services = [] }) => {
                     everything we do. In today’s fast-paced world, staying ahead means not just meeting expectations, but exceeding them at every turn.
                 </p>
             </div>
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 xl:px-0 gap-8 xl:grid-cols-3 mt-16">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 xl:px-0 gap-8 xl:grid-cols-3 mt-16 ">
                 {services.map((service, idx) => (
                     <Fragment key={`service-${idx}`}>
                         <ServiceListCard service={service} />
